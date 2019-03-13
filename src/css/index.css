@@ -1,0 +1,422 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  font-family: STHeitiSC-Light;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+html,
+body,
+form,
+fieldset,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-text-size-adjust: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  font-family: arial, sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+ins,
+a {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  display: inline-block;
+}
+
+input,
+textarea {
+  border: none;
+  background: none;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+  -o-tap-highlight-color: transparent;
+}
+
+/*html {
+    font-size: $browser-default-font-size;
+}*/
+html {
+  font-size: 37.5px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.warpper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.warpper .header {
+  width: 100%;
+  height: 1.33333rem;
+  display: flex;
+  background: #ff9132;
+  color: #fff;
+  padding: 0.21333rem 0;
+}
+
+.warpper .header span {
+  width: 0.90667rem;
+  height: 0.90667rem;
+  font-size: 0.26667rem;
+  margin: 0 0.21333rem;
+  line-height: 0.90667rem;
+}
+
+.warpper .header .box {
+  flex: 1;
+  margin: 0 px2mre(15px);
+  border-radius: 0.45333rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.warpper .header .box input {
+  height: 100%;
+  width: 100%;
+  text-indent: 1.06667rem;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.warpper .header .box i {
+  display: block;
+  height: 0.53333rem;
+  width: 0.53333rem;
+  font-size: 0.53333rem;
+  position: absolute;
+  left: 0.26667rem;
+  top: 0.18667rem;
+  z-index: 10;
+}
+
+.warpper .mian {
+  flex: 1;
+  background: #f4f4f4;
+  overflow-y: scroll;
+}
+
+.warpper .mian .banner {
+  width: 100%;
+  height: 3.2rem;
+  background: red;
+}
+
+.warpper .mian .banner .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+
+.warpper .mian .banner .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.warpper .mian .nav {
+  width: 100%;
+  height: 4.26667rem;
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+}
+
+.warpper .mian .nav span {
+  width: 20%;
+  height: 2.13333rem;
+}
+
+.warpper .mian .nav span i {
+  display: block;
+  width: 1.22667rem;
+  height: 1.22667rem;
+  margin: 0.18667rem 0.45333rem 0;
+  background: pink;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.22667rem;
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+.warpper .mian .nav span b {
+  display: block;
+  width: 100%;
+  height: 0.74667rem;
+  line-height: 0.74667rem;
+  text-align: center;
+}
+
+.warpper .mian .tou {
+  width: 100%;
+  height: 1.46667rem;
+  background: #fff;
+  display: flex;
+  margin-bottom: 0.26667rem;
+}
+
+.warpper .mian .tou h1 {
+  width: 1.22667rem;
+  height: 100%;
+  margin-left: 0.26667rem;
+  text-align: center;
+  color: #542c34;
+  font-size: 0.53333rem;
+}
+
+.warpper .mian .tou ul {
+  flex: 1;
+  margin: 0.13333rem 0.21333rem 0;
+}
+
+.warpper .mian .tou ul li {
+  line-height: 0.58667rem;
+}
+
+.warpper .mian .tou span {
+  width: 1.46667rem;
+  height: 100%;
+}
+
+.warpper .mian .tou span img {
+  width: 100%;
+  height: 100%;
+}
+
+.warpper .mian .tit {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.warpper .mian .tit .box {
+  height: 2.93333rem;
+  width: 4.96rem;
+  margin-top: 0.08rem;
+  padding: 0 0.26667rem;
+  display: flex;
+  background: #fff;
+}
+
+.warpper .mian .tit .box .left {
+  height: 100%;
+  width: 1.86667rem;
+  text-align: center;
+}
+
+.warpper .mian .tit .box .left h2 {
+  width: 100%;
+  height: 0.69333rem;
+  line-height: 0.69333rem;
+  font-size: 0.48rem;
+}
+
+.warpper .mian .tit .box .left img {
+  width: 1.46667rem;
+  height: 1.6rem;
+  margin-top: 0.13333rem;
+}
+
+.warpper .mian .tit .box .right {
+  flex: 1;
+}
+
+.warpper .mian .tit .box .right span {
+  display: block;
+  height: 2.4rem;
+  width: 1.86667rem;
+  background: red;
+  margin: 0.26667rem 0 0.21333rem 0.48rem;
+}
+
+.warpper .mian .tit .box .right span img {
+  width: 100%;
+  height: 100%;
+}
+
+.warpper .footer {
+  width: 100%;
+  height: 1.33333rem;
+  display: flex;
+}
+
+.warpper .footer span {
+  width: 20%;
+  height: 100%;
+  text-align: center;
+}
+
+.warpper .footer span i {
+  display: block;
+  width: 0.74667rem;
+  height: 0.74667rem;
+  margin: 0.05333rem auto 0;
+  font-size: 0.74667rem;
+}
+
+.warpper .footer span.big i {
+  width: 1.06667rem;
+  height: 1.06667rem;
+  margin: 0.05333rem auto 0;
+  font-size: 1.06667rem;
+  color: #ff6704;
+}
