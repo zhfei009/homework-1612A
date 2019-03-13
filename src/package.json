@@ -1,0 +1,24 @@
+{
+    "name": "gulps",
+    "version": "1.0.0",
+    "description": "",
+    "main": "gulpfile.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "gulp": "^4.0.0",
+        "gulp-sass": "*",
+        "gulp-autoprefixer": "*",
+        "gulp-clean-css": "*",
+        "gulp-concat": "*",
+        "gulp-babel": "7.0.0",
+        "babel-core": "*",
+        "babel-preset-es2015": "*",
+        "gulp-uglify": "*",
+        "gulp-htmlmin": "*",
+        "gulp-webserver": "*"
+    }
+}

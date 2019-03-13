@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="head">
+            <div class="headleft">
+                <p class="p1">北京</p>
+                <p class="p2">v</p>
+            </div>
+            <form action="">
+                <i class="icon iconfont icon-fangdajing"></i>
+                <input type="text" placeholder="输入商家/品类/商圈">
+            </form>
+            <div class="headright">
+                <i class="icon iconfont icon-icongerenzhongxin-01"></i>
+                <a href="#">我的</a>
+            </div>
+        </div>
+        <div class="main">
+            <div class="mainhead">
+                <img src="./imgs/1.png" alt="">
+            </div>
+            <div class="mainswiper">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./imgs/2.png" alt="">
+                                <p>美食</p>
+                            </a>
+
+                            <a href="#">
+                                <img src="./imgs/3.png" alt="">
+                                <p>猫眼电影</p>
+                            </a>
+                            <a href="#">
+                                <img src="./imgs/4.png" alt="">
+                                <p>酒店</p>
+                            </a>
+                            <a href="#">
+                                <img src="./imgs/5.png" alt="">
+                                <p>休闲娱乐</p>
+                            </a>
+                            <a href="#">
+                                <img src="./imgs/6.png" alt="">
+                                <p>外卖</p>
+                            </a>
+                            <a href="#">
+                                <img src="./imgs/7.png" alt="">
+                                <p>KTV</p>
+                            </a>
+                            <a href="#">
+                                <img src="./imgs/8.png" alt="">
+                                <p>周边游</p>
+                            </a>
+                            <a href="#">
+                                <img src="./imgs/9.png" alt="">
+                                <p>丽人</p>
+                            </a>
+                            <a href="#">
+                                <img src="./imgs/10.png" alt="">
+                                <p>小吃快餐</p>
+                            </a>
+                            <a href="#">
+                                <img src="./imgs/11.png" alt="">
+                                <p>火车票</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="./imgs/12.png" alt="">
+                                <p>生活服务</p>
+                            </a>
+
+                            <a href="#">
+                                <img src="./imgs/13.png" alt="">
+                                <p>今日新单</p>
+                            </a>
+                            <a href="#">
+                                <img src="./imgs/14.png" alt="">
+                                <p>足疗/按摩</p>
+                            </a>
+                            <a href="#">
+                                <img src="./imgs/15.png" alt="">
+                                <p>甜点饮品</p>
+                            </a>
+                            <a href="#">
+                                <img src="./imgs/16.png" alt="">
+                                <p>母婴亲子</p>
+                            </a>
+                            <a href="#">
+                                <img src="./imgs/17.png" alt="">
+                                <p>学习培训</p>
+                            </a>
+                            <a href="#">
+                                <img src="./imgs/18.png" alt="">
+                                <p>结婚</p>
+                            </a>
+                            <a href="#">
+                                <img src="./imgs/19.png" alt="">
+                                <p>安装</p>
+                            </a>
+                            <a href="#">
+                                <img src="./imgs/20.png" alt="">
+                                <p>汽车服务</p>
+                            </a>
+                            <a href="#">
+                                <img src="./imgs/21.png" alt="">
+                                <p>全部分类</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="mainlist">
+
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+<script src="./scripts/flexible.js"></script>
+<script src="./scripts/swiper.min.js"></script>
+<script src="./scripts/better-scroll.js"></script>
+<script>
+    let swiper = new Swiper('.swiper-container', {
+        loop: true,
+        autoplay: true,
+        pagination: {
+            el: ".swiper-pagination"
+        }
+    })
+</script>
+
+</html>
