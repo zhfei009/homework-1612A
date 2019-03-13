@@ -1,0 +1,159 @@
+@import "common.scss";
+@import "myscss.scss";
+$browser-default-font-size: 37.5px !default;
+
+/*html {
+    font-size: $browser-default-font-size;
+}*/
+
+@function pr($px) {
+    //$px为需要转换的字号
+    @return $px / $browser-default-font-size * 1rem;
+}
+
+// pxTorem(10);
+//SCSS
+html {
+    font-size: $browser-default-font-size;
+}
+*{
+    @include sizing;
+    scroll-behavior: smooth;
+}
+html,body{
+    @include num(100%,100%);
+}
+.wrap{
+    @include num(100%,100%);
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    @include num(100%,50px);
+    background: linear-gradient(to right, #FF9000, #FF5100);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    align-items: center;
+    position: relative;
+    >i{
+        color:#fff;
+        font-size: 24px;
+    }
+    input{
+        @include num(75%,45%);
+        border-radius: 30px;
+        border: 1px solid #ccc;
+        text-indent: 15px;
+    }
+    input::-webkit-input-placeholder{
+        color:#fff;
+    }
+    p{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        >i{
+            color:#fff;
+        }
+        span{
+            color:#fff;
+        }
+    }
+}
+.section{
+    width: 100%;
+    flex: 1;
+    overflow-y: auto;
+}
+.swiper-container{
+    width: 100%;
+    height: 120px;
+    .swiper-wrapper{
+        width: 100%;
+        height: 100%;
+        .swiper-slide{
+            width: 100%;
+            height: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+            }
+        }
+    }
+}
+nav{
+    @include num(100%,160px);
+    border-bottom:1px solid #ccc;
+    display: flex;
+    flex-wrap: wrap;
+    div {
+        width: 20%;
+        height: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 50%;
+            height: 50%;
+            border-radius: 50%;
+            margin-bottom: 5px;
+        }
+    }
+}
+.tit {
+    width: 100%;
+    height: 150px;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+.list{
+    @include num(100%,auto);
+    display: flex;
+    flex-wrap: wrap;
+    li{
+        @include num(49%,150px);
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        display: flex;
+        flex-direction: column;
+        p{
+            width: 100%;
+            height: 30px;
+            text-indent: 15px;
+            line-height: 30px;
+            font-size: 16px;
+            color:red;
+        }
+        img{
+            flex: 1;
+            height: 100px;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+    li:nth-child(even){
+        border-right: 0;
+    }
+}
+.footer{
+    @include num(100%,50px);
+    border-top:1px solid #ccc;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    p{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        span{
+            color:#000;
+            font-size: 14px;
+        }
+    }
+}
