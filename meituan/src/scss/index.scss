@@ -1,0 +1,127 @@
+@import "common.scss";
+@import "mixin.scss";
+.box {
+    width: 100%;
+    height: 100%;
+    @include box-flex;
+    @include direction(column);
+    header {
+        width: 100%;
+        height: pxTorem(60px);
+        @include box-flex;
+        @include align;
+        background: #5dc9eb;
+        padding: 0 pxTorem(10px);
+        @include sizing;
+        @include justify(space-around);
+        form {
+            width: 55%;
+            height: pxTorem(30px);
+            background: rgba(0, 0, 0, 0.1);
+            @include box-flex;
+            @include align;
+            @include justify(space-around);
+            padding: 0 pxTorem(10px);
+            @include sizing;
+            span {
+                display: block;
+                width: pxTorem(30px);
+                text-align: center;
+                font-size: pxTorem(14px);
+                color: #fff;
+            }
+            input {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &>div {
+            @include box-flex;
+            @include direction(column);
+            text-align: center;
+            span {
+                font-size: pxTorem(18px);
+                color: #fff;
+            }
+            i {
+                font-style: normal;
+                font-size: pxTorem(10px);
+                color: #fff;
+            }
+        }
+    }
+    main {
+        @include flex;
+        overflow: hidden;
+        // background: red;
+        .banner {
+            width: 100%;
+            height: pxTorem(120px);
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .swiper-container {
+            width: 100%;
+            height: pxTorem(200px);
+            .list {
+                width: 100%;
+                height: pxTorem(160px);
+                @include box-flex;
+                @include flexWrap;
+                margin-top: pxTorem(15px);
+                dl {
+                    width: 20%;
+                    height: 50%;
+                    padding-top: pxTorem(10px);
+                    @include box-flex;
+                    @include direction(column);
+                    @include align(center);
+                    dt {
+                        width: pxTorem(40px);
+                        height: pxTorem(40px);
+                        border-radius: 50%;
+                        background: #5dc9eb;
+                    }
+                    dd {
+                        margin-top: pxTorem(5px);
+                    }
+                }
+            }
+        }
+        h3 {
+            padding: 0 pxTorem(10px);
+            @include sizing;
+            font-size: pxTorem(20px);
+            //font-weight: bolder;
+        }
+        .conlist {
+            width: 100%;
+            padding: 0 pxTorem(10px);
+            @include sizing;
+            dl {
+                width: 100%;
+                height: pxTorem(80px);
+                @include box-flex;
+                @include align();
+                h4,
+                b {
+                    font-size: pxTorem(16px);
+                }
+                b {
+                    color: #5dc9eb;
+                    font-weight: bolder;
+                }
+                div {
+                    dd {
+                        @include box-flex;
+                        @include justify(space-between);
+                        padding-left: pxTorem(20px);
+                        @include sizing;
+                    }
+                }
+            }
+        }
+    }
+}
