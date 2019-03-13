@@ -1,0 +1,210 @@
+@import "./_minix.scss";
+@import "./common.scss";
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .head {
+        width: 100%;
+        line-height: pxTorem(35px);
+        background: #ff8c33;
+        padding: 0 pxTorem(10px);
+        display: flex;
+        position: relative;
+        span {
+            flex: 1;
+            text-align: center;
+            img {
+                width: 50%;
+            }
+        }
+        .icons {
+            position: absolute;
+            left: pxTorem(50px);
+            top: 0;
+            i {
+                color: white;
+                font-size: pxTorem(16px);
+            }
+        }
+        input {
+            flex: 8;
+            height: pxTorem(25px);
+            border: 1px solid rgb(231, 222, 222);
+            padding: 0 pxTorem(10px);
+            margin-top: pxTorem(5px);
+            color: white;
+            border-radius: pxTorem(15px);
+            padding-left: pxTorem(35px);
+        }
+    }
+    .foot {
+        width: 100%;
+        height: pxTorem(40px);
+        background: rgb(238, 234, 234);
+        overflow: hidden;
+        display: flex;
+        dl {
+            flex: 1;
+            text-align: center;
+            dt {
+                height: pxTorem(20px);
+                i {
+                    font-size: pxTorem(21px);
+                }
+            }
+            dd {
+                margin-top: pxTorem(10px);
+                line-height: pxTorem(10px);
+            }
+        }
+    }
+    .contains {
+        flex: 1;
+        overflow: hidden;
+        .swipers {
+            height: pxTorem(180px);
+            width: 100%;
+            .swiper-container {
+                width: 100%;
+                height: 100%;
+                .swiper-slide {
+                    width: 100%;
+                    height: 100%;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+        .lists {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            dl {
+                width: 20%;
+                text-align: center;
+                flex-shrink: 0;
+                margin-top: pxTorem(10px);
+                dt {
+                    height: pxTorem(35px);
+                    width: 100%;
+                    img {
+                        height: 100%;
+                        border-radius: 50%
+                    }
+                }
+                dd {
+                    line-height: pxTorem(20px);
+                }
+            }
+        }
+        .thead {
+            height: pxTorem(50px);
+            width: 100%;
+            display: flex;
+            .lefts {
+                flex: 1.5;
+                text-align: center;
+                line-height: pxTorem(50px);
+                img {
+                    height: 70%;
+                    margin-top: pxTorem(5px);
+                }
+            }
+            .swiper2 {
+                flex: 7.5;
+                height: 100%;
+                .swiper-slide {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    .ps {
+                        flex: 8;
+                        line-height: pxTorem(25px);
+                        span {
+                            border: 1px solid red;
+                            padding: 0 pxTorem(3px);
+                            margin-right: pxTorem(5px);
+                        }
+                    }
+                    .iamges {
+                        flex: 2;
+                        >img {
+                            width: 100%;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .tmade {
+            height: auto;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            >div {
+                width: 50%;
+                height: pxTorem(100px);
+                padding: pxTorem(10px);
+                display: flex;
+                .intro {
+                    flex: 5;
+                    >h3 {
+                        line-height: pxTorem(20px);
+                        color: skyblue;
+                        font-size: pxTorem(13px);
+                    }
+                    p {
+                        line-height: pxTorem(15px);
+                        font-size: pxTorem(10px);
+                    }
+                    img {
+                        height: pxTorem(55px);
+                        width: 80%;
+                        margin-top: pxTorem(5px);
+                    }
+                }
+                .images {
+                    flex: 5;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+        .imagess {
+            width: 100%;
+            display: flex;
+            margin-top: pxTorem(10px);
+            div {
+                width: 100%;
+                height: pxTorem(100px);
+                display: flex;
+                .big {
+                    flex: 7;
+                    img {
+                        width: 100%
+                    }
+                }
+                .small {
+                    flex: 3;
+                    img {
+                        width: 100%
+                    }
+                }
+            }
+        }
+    }
+}
