@@ -1,0 +1,183 @@
+@import "mixin.scss";
+@import "common.scss";
+.box {
+    width: 100%;
+    height: 100%;
+    @include box-flex;
+    @include direction(column);
+    header {
+        width: 100%;
+        height: pxTorem(60px);
+        @include box-flex;
+        @include align;
+        background: #fc651f;
+        padding: 0 pxTorem(10px);
+        @include sizing;
+        @include justify(space-around);
+        form {
+            width: 55%;
+            height: pxTorem(30px);
+            border-radius: pxTorem(15px);
+            background: rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            @include box-flex;
+            @include align;
+            @include justify(space-around);
+            padding: 0 pxTorem(10px);
+            @include sizing;
+            span {
+                display: block;
+                width: pxTorem(30px);
+                text-align: center;
+                font-size: pxTorem(14px);
+                color: #fff;
+            }
+            input {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &>div {
+            @include box-flex;
+            @include direction(column);
+            text-align: center;
+            span {
+                font-size: pxTorem(18px);
+                color: #fff;
+            }
+            i {
+                font-style: normal;
+                font-size: pxTorem(10px);
+                color: #fff;
+            }
+        }
+    }
+    .banner {
+        width: 100%;
+        height: pxTorem(150px);
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    main {
+        @include flex;
+        padding: 0 pxTorem(10px);
+        @include sizing;
+        overflow: auto;
+        .container {
+            .list {
+                width: 100%;
+                height: pxTorem(160px);
+                @include box-flex;
+                @include flexWrap;
+                dl {
+                    width: 20%;
+                    height: 50%;
+                    padding-top: pxTorem(10px);
+                    @include box-flex;
+                    @include direction(column);
+                    @include align(center);
+                    dt {
+                        width: pxTorem(40px);
+                        height: pxTorem(40px);
+                        border-radius: 50%;
+                        background: #fc651f;
+                    }
+                    dd {
+                        margin-top: pxTorem(5px);
+                    }
+                }
+            }
+            .hot {
+                width: 100%;
+                height: pxTorem(60px);
+                margin-top: pxTorem(20px);
+                @include box-flex;
+                img {
+                    width: pxTorem(60px);
+                }
+                &>div {
+                    @include flex;
+                    padding: 0 pxTorem(10px);
+                    @include sizing;
+                    li {
+                        height: pxTorem(30px);
+                        line-height: pxTorem(30px);
+                        span {
+                            padding: pxTorem(3px);
+                            border-radius: pxTorem(5px);
+                            border: pxTorem(1px) solid #fc651f;
+                            margin-right: pxTorem(5px);
+                        }
+                    }
+                }
+            }
+            .goods {
+                width: 100%;
+                height: pxTorem(320px);
+                @include box-flex;
+                @include flexWrap;
+                margin-top: pxTorem(20px);
+                .goodlist {
+                    flex-shrink: 1;
+                    width: 50%;
+                    height: pxTorem(160px);
+                    margin-top: pxTorem(20px);
+                    @include box-flex;
+                    dl {
+                        width: 50%;
+                        height: 100%;
+                        dd {
+                            line-height: pxTorem(30px);
+                        }
+                        dt {
+                            img {
+                                height: pxTorem(100px);
+                            }
+                        }
+                    }
+                    div {
+                        width: 50%;
+                        height: 100%;
+                        // padding-top: pxTorem(25px);
+                        img {
+                            width: 80%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        width: 100%;
+        height: pxTorem(60px);
+        // background: #fcc616;
+        @include box-flex;
+        @include align;
+        padding: 0 pxTorem(10px);
+        @include sizing;
+        dl {
+            width: 20%;
+            // height: 100%;
+            text-align: center;
+            i {
+                font-size: pxTorem(18px)
+            }
+            span {
+                width: pxTorem(40px);
+                height: pxTorem(40px);
+                line-height: pxTorem(40px);
+                background: #fc651f;
+                display: inline-block;
+                border-radius: 50%;
+                text-align: center;
+            }
+        }
+    }
+}

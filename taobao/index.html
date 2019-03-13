@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>淘宝</title>
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+
+</head>
+
+<body>
+    <div class="box">
+        <header>
+            <div>
+                <span class="iconfont icon-shouji1"></span>
+                <i>扫一扫</i>
+            </div>
+            <form action="">
+                <span class="iconfont icon-fangdajing"></span>
+                <input type="text" placeholder="草莓">
+                <span class="iconfont icon-gongzuojilu"></span>
+            </form>
+            <div>
+                <span class="iconfont icon-gongzuo"></span>
+                <i>会员码</i>
+            </div>
+        </header>
+
+        <div class="banner">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/IMG_5664.JPG" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/IMG_5665.JPG" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/IMG_5667.JPG" alt="">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <main>
+            <div class="container">
+                <div class="list">
+                    <dl>
+                        <dt></dt>
+                        <dd>天猫</dd>
+                    </dl>
+                    <dl>
+                        <dt></dt>
+                        <dd>聚划算</dd>
+                    </dl>
+                    <dl>
+                        <dt></dt>
+                        <dd>天猫国际</dd>
+                    </dl>
+                    <dl>
+                        <dt></dt>
+                        <dd>外卖</dd>
+                    </dl>
+                    <dl>
+                        <dt></dt>
+                        <dd>天猫超市</dd>
+                    </dl>
+                    <dl>
+                        <dt></dt>
+                        <dd>充值中心</dd>
+                    </dl>
+                    <dl>
+                        <dt></dt>
+                        <dd>飞猪旅行</dd>
+                    </dl>
+                    <dl>
+                        <dt></dt>
+                        <dd>领金币</dd>
+                    </dl>
+                    <dl>
+                        <dt></dt>
+                        <dd>拍卖</dd>
+                    </dl>
+                    <dl>
+                        <dt></dt>
+                        <dd>分类</dd>
+                    </dl>
+                </div>
+                <div class="hot">
+                    <img src="./images/2.jpg" alt="">
+                    <div>
+                        <ul>
+                            <li>
+                                <span>热门</span>又一合资车撑不住了
+                            </li>
+                            <li>
+                                <span>热门</span>这车从19万降到14万
+                            </li>
+                        </ul>
+                    </div>
+                    <img src="./images/1.jpg" alt="">
+                </div>
+                <div class="goods">
+                    <div class="goodlist">
+                        <dl>
+                            <dd><b>淘抢购</b></dd>
+                            <dd>高颜值美物</dd>
+                            <dt><img src="./images/IMG_5134.JPG" alt=""> </dt>
+                        </dl>
+                        <div>
+                            <img src="./images/IMG_5134.JPG" alt="">
+                        </div>
+                    </div>
+                    <div class="goodlist">
+                        <dl>
+                            <dd><b>淘抢购</b></dd>
+                            <dd>高颜值美物</dd>
+                            <dt><img src="./images/IMG_5134.JPG" alt=""> </dt>
+                        </dl>
+                        <div>
+                            <img src="./images/IMG_5134.JPG" alt="">
+                        </div>
+                    </div>
+                    <div class="goodlist">
+                        <dl>
+                            <dd><b>淘抢购</b></dd>
+                            <dd>高颜值美物</dd>
+                            <dt><img src="./images/IMG_5134.JPG" alt=""> </dt>
+                        </dl>
+                        <div>
+                            <img src="./images/IMG_5134.JPG" alt="">
+                        </div>
+                    </div>
+                    <div class="goodlist">
+                        <dl>
+                            <dd><b>淘抢购</b></dd>
+                            <dd>高颜值美物</dd>
+                            <dt><img src="./images/IMG_5134.JPG" alt=""> </dt>
+                        </dl>
+                        <div>
+                            <img src="./images/IMG_5134.JPG" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <dl><span>淘</span></dl>
+            <dl>
+                <dt><i class="iconfont icon-faxiandingdan"></i></dt>
+                <dd>微淘</dd>
+            </dl>
+            <dl>
+                <dt><i class="iconfont icon-xiaoxi2"></i></dt>
+                <dd>消息</dd>
+            </dl>
+            <dl>
+                <dt><i class="iconfont icon-xiaoxi2"></i></dt>
+                <dd>购物车</dd>
+            </dl>
+            <dl>
+                <dt><i class="iconfont icon-gerenxinxi"></i></dt>
+                <dd>我的淘宝</dd>
+            </dl>
+
+        </footer>
+    </div>
+    <script src="./js/flexible.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/better-scroll.js"></script>
+    <script>
+        new Swiper(".swiper-container", {
+            autoplay: {
+                delay: 1000
+            },
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            }
+        })
+
+        new BScroll('main')
+    </script>
+</body>
+
+</html>
