@@ -1,0 +1,249 @@
+@import "./libs/_minix.scss";
+@import "./libs/common.scss";
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	user-select: none;
+}
+	
+.wrap{
+	width: 100%;
+	height: 100%;
+	@include box_flex;
+	@include direction(column);
+	header{
+		width: 100%;
+		height: pxTorem(132px/3);
+		background: #ff5700;
+		@include box_flex;
+		padding: 0 pxTorem(40px/3);
+		@include justify(space-between);
+		@include align;
+		>dl{
+			width: pxTorem(150px/3);
+			height: 100%;	
+			color: #fff;
+			@include box_flex;
+			@include direction(column);
+			@include justify;
+			@include align;
+			dt{
+				width: 100%;
+				height: 60%;
+				@include box_flex;
+				@include align;
+				@include justify;
+			}
+			dd{
+				width: 100%;
+				height: 25%;
+				@include box_flex;
+				@include align;
+				@include justify;
+				font-size:pxTorem(30px/3);
+			}
+			i{
+				font-size:pxTorem(70px/3);
+			}
+		}
+		.input{
+			height: pxTorem(99px/3);
+			@include flex;
+			@include box_flex;
+			@include align;
+			@include justify;
+			background: #ff8e32;
+			border-radius: pxTorem(45px);
+			padding: 0 pxTorem(10px);
+			input{
+				padding: 0;
+				margin: 0;
+				background:#ff8e32;
+				border:0;
+				text-indent: pxTorem(10px);
+			}
+			i{
+				font-size:pxTorem(50px/3);
+				color: #fff;
+			}
+		}
+	}
+	section{
+		width: 100%;
+		@include box_flex;	
+		@include direction(column);
+		@include flex;
+		overflow-y:auto;
+		.banner{
+			width: 100%;
+			height: pxTorem(387px/3);
+			@include flex_shrink(0);
+		}
+		.nav{
+			width: 100%;
+			height: pxTorem(522px/3);
+			@include flex_shrink(0);
+			@include box_flex;	
+			@include flexWrap(wrap);	
+			background: #fff;
+			>dl{
+				margin: 0;
+				padding: 0;
+				width: calc(100%/5);
+				height: calc(100%/2);
+				@include flex_shrink(0);
+				@include box_flex;
+				@include align;
+				@include justify;
+				@include direction(column);
+				>dt{
+					width: 100%;
+					@include box_flex;
+					@include align;
+					@include justify;
+					padding: pxTorem(1px) pxTorem(10px);
+					>img{
+						width: pxTorem(143px/3);
+						height: pxTorem(143px/3);
+						border-radius: 50%;
+					}
+				}
+				>dd{
+					width: 100%;
+					@include box_flex;
+					@include align;
+					@include justify;
+					font-size:pxTorem(29px/2.5);
+					font-weight:bold;
+					padding: pxTorem(1px) pxTorem(10px);
+					color:#858585;
+				}
+			}
+		}
+		.title{
+			width:100%;
+			height: 179px;
+			background: url(../images/title_02.jpg) no-repeat;
+			background-size: 100% 100%;
+			margin-bottom: pxTorem(10px);
+			.content{
+				width:100%;
+				height:100%;
+				padding: 0 pxTorem(192px/3);
+				@include box_flex;
+				@include justify;
+				@include direction(column);
+				p{
+					width:100%;
+					margin: pxTorem(5px) 0;
+					label{
+						border: pxTorem(1px) solid #dd6215;
+						padding: pxTorem(1px) pxTorem(3px);
+						border-radius: pxTorem(2px);
+						color: #dd6215;
+					}
+				}
+			}
+		}
+		.main{
+			width:100%;
+			@include box_flex;
+			// margin: pxTorem(2px);
+			@include flexWrap(wrap);
+			background: #fff;
+			@include sizing;
+			.zip{
+				width:50%;
+				height: pxTorem(375px/3);
+				@include box_flex;
+				@include flex_shrink(0);
+				@include sizing;
+				.left{
+					@inlcude flex;
+					@include box_flex;
+					@include direction(column);
+					.th{
+						width:100%;
+						height: 40%;
+						@include box_flex;
+						@include direction(column);
+						padding: 0 pxTorem(12px/3);
+						@include justify;
+						h3{
+							color: red;
+							font-weight: bold;
+							font-size:pxTorem(60px/3);
+						}
+					}
+					.tb{
+						width:100%;
+						@include flex;
+						img{
+							width:100%;
+							height:100%;
+						}
+					}
+				}
+				.right{
+					@inlcude flex;
+					height: 100%;
+					img{
+						width:100%;
+						height:100%;
+					}
+				}
+			}
+		}
+	}
+	footer{
+		width:100%;
+		height: pxTorem(150px/3);
+		background: #f0f0f0;
+		padding: 0 pxTorem(40px/3);
+		@include flex_shrink(0);
+		@include box_flex;
+		@include align;
+		.logo{
+			height:pxTorem(120px/3);
+			width:pxTorem(120px/3);
+			@include flex_shrink(0);
+			border-radius: 50%;
+			overflow:hidden;
+			img{
+				width:100%;
+				height:100%;
+			}
+		}
+		>dl{
+			padding: 0;
+			margin: 0;
+			@include flex_shrink(0);
+			@include box_flex;
+			@include flex;
+			@include align;
+			@include justify;
+			@include direction(column);
+			>dt{
+				width: 100%;
+				@include box_flex;
+				@include flex;
+				@include align;
+				@include justify;
+				>i{
+					font-size:pxTorem(80px/3);
+				}
+			}
+			>dd{
+				width: 100%;
+				height: pxTorem(10px);
+				@include box_flex;
+				@include align;
+				@include justify;
+				padding: pxTorem(20px/3);
+				font-size:pxTorem(30px/3);
+			}
+		}
+	}
+}

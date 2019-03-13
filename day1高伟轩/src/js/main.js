@@ -1,0 +1,9 @@
+require.config({
+	baseUrl:"/js/",
+	paths:{
+		"index":"pages/index",
+		"mui":"libs/mui.min",
+		"swiper":"libs/swiper",
+		"BScroll":"libs/bscroll.min"
+	}
+})
