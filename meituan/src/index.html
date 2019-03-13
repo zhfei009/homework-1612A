@@ -119,7 +119,7 @@
                 </div>
                 <h3>猜你喜欢</h3>
                 <div class="conlist">
-                    <dl>
+                    <!-- <dl>
                         <dt>
                             <img src="./images/1.png" alt="">
                         </dt>
@@ -166,7 +166,7 @@
                             <dd>[15店通用]鸡腿堡+薯条+可乐1份</dd>
                             <dd><span><b>13元</b>门店价31元</span><span>已售4321</span></dd>
                         </div>
-                    </dl>
+                    </dl> -->
                 </div>
             </div>
 
@@ -176,6 +176,7 @@
     <script src="./js/swiper.min.js"></script>
     <script src="./js/better-scroll.js"></script>
     <script>
+        //轮播图
         new Swiper(".swiper-container", {
             autoplay: {
                 delay: 1000
@@ -187,7 +188,40 @@
             }
         })
 
+        //scroll事件
         new BScroll('main')
+
+        var xml = new XMLHttpRequest();
+        xml.open('get', '/list', true);
+        xml.onreadystatechange = function() {
+            if (xml.readyState == 4 && xml.status == 200) {
+                var data = JSON.parse(xml.responseText)
+                    // console.log(data)
+                render(data.data)
+
+            }
+        }
+        xml.send()
+
+        //渲染数据
+        function render(data) {
+            var html = '';
+            data.forEach(function(val) {
+                html += ` <dl>
+                        <dt>
+                            <img src="${val.img}" alt="">
+                        </dt>
+                        <div>
+                            <dd>
+                                <h4>${val.name}</h4>
+                            </dd>
+                            <dd>${val.title}</dd>
+                            <dd><span><b>${val.money}元</b>门店价${val.moneymax}元</span><span>已售${val.sales}</span></dd>
+                        </div>
+                    </dl>`
+            })
+            document.getElementsByClassName('conlist')[0].innerHTML = html
+        }
     </script>
 </body>
 

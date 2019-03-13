@@ -1,3 +1,41 @@
 [{
-    "title": "商品1"
-}]
+        "name": "麦当劳",
+        "title": "[15店通用]鸡腿堡+薯条+可乐+冰淇淋1份",
+        "money": "32",
+        "moneymax": "55",
+        "sales": "3333",
+        "img": "images/1.png"
+    },
+    {
+        "name": "肯德基",
+        "title": "[20店通用]鸡腿堡1份",
+        "money": "23",
+        "moneymax": "40",
+        "sales": "2313",
+        "img": "images/2.png"
+    },
+    {
+        "name": "吉野家",
+        "title": "[50店通用]鸡腿堡+冰淇淋2份",
+        "money": "52",
+        "moneymax": "85",
+        "sales": "533",
+        "img": "images/1.png"
+    },
+    {
+        "name": "依兰拉面",
+        "title": "[80店通用]拉面5份",
+        "money": "200",
+        "moneymax": "85",
+        "sales": "303",
+        "img": "images/2.png"
+    },
+    {
+        "name": "华莱士",
+        "title": "[100店通用]鸡腿堡+薯条+可乐+冰淇淋1份",
+        "money": "230",
+        "moneymax": "515",
+        "sales": "133",
+        "img": "images/1.png"
+    }
+]

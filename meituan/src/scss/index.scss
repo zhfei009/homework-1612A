@@ -114,11 +114,15 @@
                     font-weight: bolder;
                 }
                 div {
+                    @include flex;
                     dd {
                         @include box-flex;
                         @include justify(space-between);
                         padding-left: pxTorem(20px);
                         @include sizing;
+                        b {
+                            margin-right: pxTorem(10px);
+                        }
                     }
                 }
             }

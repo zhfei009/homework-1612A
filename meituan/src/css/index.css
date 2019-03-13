@@ -307,16 +307,21 @@ html {
         .box main .conlist dl b {
           color: #5dc9eb;
           font-weight: bolder; }
-        .box main .conlist dl div dd {
-          display: flex;
-          /* NEW, Spec - Opera 12.1, Firefox 20+ */
-          display: -webkit-flex;
-          /* NEW - Chrome */
-          -webkit-justify-content: space-between;
-          justify-content: space-between;
-          padding-left: 0.53333rem;
-          -webkit-box-sizing: border-box;
-          -moz-box-sizing: border-box;
-          -ms-box-sizing: border-box;
-          -o-box-sizing: border-box;
-          box-sizing: border-box; }
+        .box main .conlist dl div {
+          -webkit-flex: 1 1 0%;
+          flex: 1 1 0%; }
+          .box main .conlist dl div dd {
+            display: flex;
+            /* NEW, Spec - Opera 12.1, Firefox 20+ */
+            display: -webkit-flex;
+            /* NEW - Chrome */
+            -webkit-justify-content: space-between;
+            justify-content: space-between;
+            padding-left: 0.53333rem;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            -o-box-sizing: border-box;
+            box-sizing: border-box; }
+            .box main .conlist dl div dd b {
+              margin-right: 0.26667rem; }
