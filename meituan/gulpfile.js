@@ -49,6 +49,7 @@ gulp.task('watch', function() {
 //压缩css
 gulp.task('sassmin', function() {
     return gulp.src('./src/scss/*.scss')
+        .pipe(sass())
         .pipe(clean())
         .pipe(gulp.dest('./build/css'))
 })

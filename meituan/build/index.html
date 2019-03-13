@@ -1,0 +1,46 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>美团</title><link rel="stylesheet" href="./css/swiper.min.css"><link rel="stylesheet" href="css/index.css"><link rel="stylesheet" href="./fonts/iconfont.css"></head><body><div class="box"><header><div><span>北京<i class="iconfont icon-angle-down"></i></span></div><form action=""><span class="iconfont icon-fangdajing"></span> <input type="text" placeholder="输入商家/品类/商圈"></form><div><span class="iconfont icon-icongerenzhongxin-01"></span> <i>我的</i></div></header><main><div class="container"><div class="banner"><img src="./images/3.png" alt=""></div><div class="swiper-container"><div class="swiper-wrapper"><div class="swiper-slide"><div class="list"><dl><dt></dt><dd>美食</dd></dl><dl><dt></dt><dd>猫眼电影</dd></dl><dl><dt></dt><dd>酒店</dd></dl><dl><dt></dt><dd>休闲娱乐</dd></dl><dl><dt></dt><dd>外卖</dd></dl><dl><dt></dt><dd>KTV</dd></dl><dl><dt></dt><dd>周边游</dd></dl><dl><dt></dt><dd>丽人</dd></dl><dl><dt></dt><dd>小吃快餐</dd></dl><dl><dt></dt><dd>火车票</dd></dl></div></div><div class="swiper-slide"><div class="list"><dl><dt></dt><dd>美食</dd></dl><dl><dt></dt><dd>猫眼电影</dd></dl><dl><dt></dt><dd>酒店</dd></dl><dl><dt></dt><dd>休闲娱乐</dd></dl><dl><dt></dt><dd>外卖</dd></dl><dl><dt></dt><dd>KTV</dd></dl><dl><dt></dt><dd>周边游</dd></dl></div></div></div><div class="swiper-pagination"></div></div><h3>猜你喜欢</h3><div class="conlist"></div></div></main></div><script src="./js/flexible.js"></script><script src="./js/swiper.min.js"></script><script src="./js/better-scroll.js"></script><script>//轮播图
+        new Swiper(".swiper-container", {
+            autoplay: {
+                delay: 1000
+            },
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            }
+        })
+
+        //scroll事件
+        new BScroll('main')
+
+        var xml = new XMLHttpRequest();
+        xml.open('get', '/list', true);
+        xml.onreadystatechange = function() {
+            if (xml.readyState == 4 && xml.status == 200) {
+                var data = JSON.parse(xml.responseText)
+                    // console.log(data)
+                render(data.data)
+
+            }
+        }
+        xml.send()
+
+        //渲染数据
+        function render(data) {
+            var html = '';
+            data.forEach(function(val) {
+                html += ` <dl>
+                        <dt>
+                            <img src="${val.img}" alt="">
+                        </dt>
+                        <div>
+                            <dd>
+                                <h4>${val.name}</h4>
+                            </dd>
+                            <dd>${val.title}</dd>
+                            <dd><span><b>${val.money}元</b>门店价${val.moneymax}元</span><span>已售${val.sales}</span></dd>
+                        </div>
+                    </dl>`
+            })
+            document.getElementsByClassName('conlist')[0].innerHTML = html
+        }</script></body></html>
