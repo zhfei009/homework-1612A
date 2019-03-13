@@ -1,0 +1,405 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  font-family: STHeitiSC-Light;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html,
+body,
+form,
+fieldset,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-text-size-adjust: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  font-family: arial, sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+ins,
+a {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  display: inline-block;
+}
+
+input,
+textarea {
+  border: none;
+  background: none;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+  -o-tap-highlight-color: transparent;
+}
+
+/*html {
+    font-size: $browser-default-font-size;
+}*/
+html {
+  font-size: 37.5px;
+}
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrap .header {
+  width: 100%;
+  height: 1.33333rem;
+  background: -webkit-linear-gradient(left, #ff9000, #ff5300);
+  background: -o-linear-gradient(right, #ff9000, #ff5300);
+  background: -moz-linear-gradient(right, #ff9000, #ff5300);
+  background: linear-gradient(to right, #ff9000, #ff5300);
+  display: flex;
+  justify-content: space-around;
+}
+
+.wrap .header .zuo {
+  width: 15%;
+  line-height: 1.33333rem;
+  text-align: center;
+}
+
+.wrap .header .zuo i {
+  font-size: 0.8rem;
+}
+
+.wrap .header .zhong {
+  width: 60%;
+  margin: 0.13333rem 0;
+}
+
+.wrap .header .zhong .inp {
+  display: block;
+  width: 100%;
+  height: 1.06667rem;
+  border: solid 0.02667rem #ccc;
+  border-radius: 0.8rem;
+  text-indent: 0.26667rem;
+}
+
+.wrap .header .you {
+  width: 15%;
+  line-height: 1.33333rem;
+  text-align: center;
+}
+
+.wrap .header .you i {
+  font-size: 0.8rem;
+}
+
+.wrap .main {
+  width: 100%;
+  flex: 1;
+  overflow-y: scroll;
+  background: #eee;
+}
+
+.wrap .main .banner {
+  width: 100%;
+  height: 3.2rem;
+}
+
+.wrap .main .banner .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap .main .banner .swiper-wrapper .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap .main .banner .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap .main .banner .swiper-pagination span {
+  margin: 0 0.13333rem;
+  width: 0.26667rem;
+  height: 0.26667rem;
+  border-radius: 50%;
+}
+
+.wrap .main .nav {
+  margin-top: 0.26667rem;
+  padding-top: 0.13333rem;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.wrap .main .nav a {
+  width: 20%;
+}
+
+.wrap .main .nav a div {
+  margin: 0 auto;
+  width: 1.06667rem;
+  height: 1.06667rem;
+  border-radius: 50%;
+}
+
+.wrap .main .nav a div img {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap .main .nav a p {
+  text-align: center;
+  font-size: 0.37333rem;
+  color: #000;
+}
+
+.wrap .main .logo {
+  margin: 0.26667rem 0;
+  width: 100%;
+  height: 1.46667rem;
+}
+
+.wrap .main .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap .main .nei {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.wrap .main .nei .box {
+  margin-top: 0.05333rem;
+  width: 49%;
+  height: 2.98667rem;
+  background: #fff;
+  display: flex;
+  justify-content: space-around;
+}
+
+.wrap .main .nei .box .z {
+  margin-top: 0.29333rem;
+  margin-bottom: 0.26667rem;
+  width: 1.76rem;
+  height: 2.61333rem;
+}
+
+.wrap .main .nei .box .z img {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap .main .nei .box .y {
+  margin-top: 0.37333rem;
+  margin-bottom: 0.26667rem;
+  width: 2.61333rem;
+  height: 2.53333rem;
+}
+
+.wrap .main .nei .box .y img {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap .footer {
+  width: 100%;
+  height: 1.33333rem;
+  background: #ccc;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrap .footer .left {
+  width: 20%;
+  line-height: 1.33333rem;
+  text-align: center;
+}
+
+.wrap .footer .left i {
+  font-size: 0.93333rem;
+  font-weight: bolder;
+  color: #ff5700;
+}
+
+.wrap .footer .right {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.wrap .footer .right a {
+  width: 20%;
+}
+
+.wrap .footer .right a div {
+  width: 100%;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  text-align: center;
+}
+
+.wrap .footer .right a div i {
+  font-size: 0.58667rem;
+  color: #000;
+}
+
+.wrap .footer .right a p {
+  height: 0.53333rem;
+  line-height: 0.53333rem;
+  text-align: center;
+  font-size: 0.37333rem;
+  color: #000;
+}
