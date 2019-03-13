@@ -1,0 +1,197 @@
+@import "common.scss";
+@import "_minix.scss";
+@function qw($px) {
+    @return $px / 37.5px * 1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: qw(12px);
+    .head {
+        width: 100%;
+        height: qw(44px);
+        line-height: qw(44px);
+        background: #FF8E01;
+        display: flex;
+        div {
+            width: 25%;
+            height: qw(44px);
+            text-align: center;
+            color: #fff;
+        }
+        .div1 {
+            width: 50%;
+            input {
+                width: 100%;
+                height: qw(30px);
+                line-height: qw(30px);
+                border-radius: qw(22px);
+                background: #FF9D32;
+                padding-left: qw(20px);
+                color: #fff;
+            }
+        }
+    }
+    .cont {
+        flex: 1;
+        width: 100%;
+        overflow-y: scroll;
+        .swiper-container {
+            width: 100%;
+            height: qw(150px);
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .nav {
+            width: 100%;
+            height: qw(160px);
+            display: flex;
+            flex-wrap: wrap;
+            dl {
+                width: 20%;
+                height: qw(80px);
+                dt {
+                    width: 100%;
+                    height: qw(55px);
+                    div {
+                        width: qw(55px);
+                        height: qw(55px);
+                        margin: qw(5px) auto;
+                        background: pink;
+                        border-radius: 50%;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+                dd {
+                    width: 100%;
+                    height: qw(20px);
+                    text-align: center;
+                    line-height: qw(20px);
+                }
+            }
+        }
+        .banner {
+            width: 100%;
+            height: qw(60px);
+            display: flex;
+            margin-top: qw(10px);
+            div {
+                width: 15%;
+                height: qw(60px);
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .div2 {
+                width: 70%;
+                height: qw(60px);
+                p {
+                    width: 100%;
+                    line-height: qw(30px);
+                    span {
+                        border: qw(1px) solid orange;
+                        color: orange;
+                    }
+                }
+            }
+        }
+        .xian {
+            border-bottom: qw(20px) solid #ccc;
+        }
+        .conter {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            dl {
+                width: 50%;
+                height: qw(100px);
+                display: flex;
+                border: qw(1px) solid #eee;
+                dd {
+                    width: 50%;
+                    height: qw(100px);
+                    text-align: center;
+                    h3 {
+                        width: 100%;
+                        height: qw(20px);
+                        color: red;
+                    }
+                    p {
+                        width: 100%;
+                        height: qw(20px);
+                        color: red;
+                    }
+                    div {
+                        width: 100%;
+                        height: qw(60px);
+                        margin: 0 auto;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+                dt {
+                    width: 50%;
+                    height: qw(100px);
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .foot {
+        width: 100%;
+        height: qw(44px);
+        background: #eee;
+        display: flex;
+        dl {
+            width: 20%;
+            height: qw(44px);
+            img {
+                width: 100%;
+                height: 100%;
+            }
+            dt {
+                width: 100%;
+                height: qw(30px);
+                div {
+                    width: qw(30px);
+                    height: qw(30px);
+                    margin: 0 auto;
+                    background: skyblue;
+                    border-radius: 50%;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            dd {
+                width: 100%;
+                height: qw(14px);
+                line-height: qw(14px);
+                text-align: center;
+                font-size: qw(12px);
+            }
+        }
+    }
+}
