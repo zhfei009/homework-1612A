@@ -1,0 +1,446 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  font-family: STHeitiSC-Light;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html,
+body,
+form,
+fieldset,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-text-size-adjust: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  font-family: arial, sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+ins,
+a {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  display: inline-block;
+}
+
+input,
+textarea {
+  border: none;
+  background: none;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+  -o-tap-highlight-color: transparent;
+}
+
+/*html {
+    font-size: $browser-default-font-size;
+}*/
+html {
+  font-size: 37.5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.wrapper header {
+  width: 100%;
+  height: 1.17333rem;
+  background: #FE8900;
+  display: flex;
+  z-index: 999;
+}
+
+.wrapper header dl:nth-child(1) {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wrapper header dl:nth-child(1) dt i {
+  font-size: 0.42667rem;
+  color: #fff;
+}
+
+.wrapper header dl:nth-child(1) dd {
+  color: #fff;
+}
+
+.wrapper header p:nth-child(2) {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper header p:nth-child(2) input {
+  width: 100%;
+  height: 80%;
+  background: #fff;
+  border-radius: 25px;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+.wrapper header dl:nth-child(3) {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper header dl:nth-child(3) dt i {
+  font-size: 0.42667rem;
+  color: #fff;
+}
+
+.wrapper header dl:nth-child(3) dd {
+  color: #fff;
+}
+
+.wrapper section {
+  flex: 1;
+}
+
+.wrapper section div {
+  width: 100%;
+}
+
+.wrapper section .container,
+.wrapper section .wrap,
+.wrapper section .slide {
+  width: 100%;
+  height: 3.2rem;
+}
+
+.wrapper section .container img,
+.wrapper section .wrap img,
+.wrapper section .slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper section .icon {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  background: #fff;
+}
+
+.wrapper section .icon div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wrapper section .icon div dl {
+  width: 20%;
+  height: 50%;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper section .icon div dl dt img {
+  width: 1.6rem;
+  height: 1.2rem;
+}
+
+.wrapper section .scroll {
+  width: 100%;
+  height: 1.86667rem;
+  display: flex;
+  background: #fff;
+}
+
+.wrapper section .scroll #scroll-left {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper section .scroll #scroll-left img {
+  width: 70%;
+  height: 60%;
+}
+
+.wrapper section .scroll div:nth-child(2) {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper section .scroll div:nth-child(2) #que {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper section .scroll div:nth-child(2) #que .hot {
+  width: 10%;
+  height: 0.4rem;
+  border: 1px solid orange;
+  color: orange;
+  border-radius: 0.08rem;
+}
+
+.wrapper section .scroll div:nth-child(2) #que em {
+  width: 85%;
+  padding-left: 0.26667rem;
+  box-sizing: border-box;
+}
+
+.wrapper section .scroll p:nth-child(3) {
+  width: 15%;
+  height: 100%;
+}
+
+.wrapper section .scroll p:nth-child(3) img {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper section .box {
+  width: 100%;
+  height: 0.26667rem;
+  background: #F4F4F4;
+}
+
+.wrapper section .list {
+  width: 100%;
+  height: 6.13333rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wrapper section .list .queue {
+  width: 49%;
+  display: flex;
+  flex-shrink: 0;
+  border: 1px solid #ececec;
+}
+
+.wrapper section .list .queue .left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper section .list .queue .left p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper section .list .queue .left img {
+  width: 1.6rem;
+  height: 1.86667rem;
+}
+
+.wrapper section .list .queue .right {
+  width: 50%;
+  height: 100%;
+}
+
+.wrapper section .list .queue .right img {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper footer {
+  width: 100%;
+  display: flex;
+  height: 1.33333rem;
+  background: #EDEDED;
+  z-index: 999;
+}
+
+.wrapper footer dl {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper footer dl dt i {
+  font-size: 0.53333rem;
+}

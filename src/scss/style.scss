@@ -1,0 +1,230 @@
+@import "common.scss";
+@import "_minix.scss";
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    header {
+        width: 100%;
+        height: pxTorem(44px);
+        background: #FE8900;
+        display: flex;
+        z-index: 999;
+        dl:nth-child(1) {
+            width: 10%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            dt i {
+                font-size: pxTorem(16px);
+                color: #fff;
+            }
+            dd {
+                //font-size: pxTorem(16px);
+                color: #fff;
+            }
+        }
+        p:nth-child(2) {
+            width: 80%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            input {
+                width: 100%;
+                height: 80%;
+                background: #fff;
+                border-radius: 25px;
+                padding-left: 15px;
+                box-sizing: border-box;
+            }
+        }
+        dl:nth-child(3) {
+            width: 10%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            dt i {
+                font-size: pxTorem(16px);
+                color: #fff;
+            }
+            dd {
+                // font-size: pxTorem(16px);
+                color: #fff;
+            }
+        }
+    }
+    section {
+        flex: 1;
+        div {
+            width: 100%;
+        }
+        .container,
+        .wrap,
+        .slide {
+            width: 100%;
+            height: pxTorem(120px);
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .icon {
+            width: 100%;
+            height: pxTorem(150px);
+            display: flex;
+            background: #fff;
+            div {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                dl {
+                    width: 20%;
+                    height: 50%;
+                    flex-shrink: 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    dt img {
+                        width: pxTorem(60px);
+                        height: pxTorem(45px);
+                    }
+                }
+            }
+        }
+        .scroll {
+            width: 100%;
+            height: pxTorem(70px);
+            display: flex;
+            background: #fff;
+            #scroll-left {
+                width: 15%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                img {
+                    width: 70%;
+                    height: 60%;
+                }
+            }
+            div:nth-child(2) {
+                width: 70%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                #que {
+                    width: 100%;
+                    height: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .hot {
+                        width: 10%;
+                        height: pxTorem(15px);
+                        border: 1px solid orange;
+                        color: orange;
+                        // display: inline-block;
+                        border-radius: pxTorem(3px);
+                    }
+                    em {
+                        width: 85%;
+                        //display: inline-block;
+                        padding-left: pxTorem(10px);
+                        box-sizing: border-box;
+                    }
+                }
+            }
+            p:nth-child(3) {
+                width: 15%;
+                height: 100%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        .box {
+            width: 100%;
+            height: pxTorem(10px);
+            background: #F4F4F4;
+        }
+        .list {
+            width: 100%;
+            height: pxTorem(230px);
+            display: flex;
+            flex-wrap: wrap;
+            .queue {
+                width: 49%;
+                // height: 49%;
+                display: flex;
+                flex-shrink: 0;
+                border: 1px solid #ececec;
+                .left {
+                    width: 50%;
+                    // height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    p {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    img {
+                        width: pxTorem(60px);
+                        height: pxTorem(70px);
+                    }
+                }
+                .right {
+                    width: 50%;
+                    height: 100%;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        width: 100%;
+        display: flex;
+        height: pxTorem(50px);
+        background: #EDEDED;
+        z-index: 999;
+        dl {
+            width: 25%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            dt i {
+                font-size: pxTorem(20px);
+            }
+        }
+    }
+}
