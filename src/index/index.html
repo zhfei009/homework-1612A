@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../fonts/iconfont.css">
+    <link rel="stylesheet" href="../css/swiper.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="head">
+            <i class="icon iconfont icon-taobao1"></i>
+            <form action="" class="form">
+                <i class="icon iconfont icon-fangdajing"></i>
+                <input type="text" class="input" placeholder="自然堂">
+                <i class="icon iconfont icon-shouye"></i>
+            </form>
+            <i class="icon iconfont icon-26"></i>
+        </div>
+        <div class="Bscro">
+            <div class="main">
+                <div class="main-head">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="../images/5.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../images/5.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../images/5.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                </div>
+                <div class="main-nav">
+                    <a href="#">
+                        <img src="../images/6.png" alt="">
+                        <p>天猫</p>
+                    </a>
+                    <a href="#">
+                        <img src="../images/7.png" alt="">
+                        <p>聚划算</p>
+                    </a>
+                    <a href="#">
+                        <img src="../images/8.png" alt="">
+                        <p>天猫国际</p>
+                    </a>
+                    <a href="#">
+                        <img src="../images/9.png" alt="">
+                        <p>天猫超市</p>
+                    </a>
+                    <a href="#">
+                        <img src="../images/10.png" alt="">
+                        <p>充值中心</p>
+                    </a>
+                    <a href="#">
+                        <img src="../images/11.png" alt="">
+                        <p>飞猪旅行</p>
+                    </a>
+                    <a href="#">
+                        <img src="../images/12.png" alt="">
+                        <p>领金币</p>
+                    </a>
+                    <a href="#">
+                        <img src="../images/13.png" alt="">
+                        <p>拍卖</p>
+                    </a>
+                    <a href="#">
+                        <img src="../images/14.png" alt="">
+                        <p>天猫</p>
+                    </a>
+                    <a href="#">
+                        <img src="../images/15.png" alt="">
+                        <p>分类</p>
+                    </a>
+                </div>
+                <div class="main-title">
+                    <img src="../images/QQ截图20190312135720.png" alt="">
+                </div>
+                <div class="main-imgs">
+                    <div class="list1 list">
+                        <div class="div">
+                            <h3>淘抢购</h3>
+                            <ul>
+                                <li class="nt1">00</li>
+                                <li>：</li>
+                                <li class="nt1">45</li>
+                                <li>：</li>
+                                <li class="nt1">52</li>
+                            </ul>
+                            <img src="../images/16.png" alt="">
+                        </div>
+                        <img src="../images/17.png" alt="" class="img">
+                    </div>
+                    <div class="list2 list">
+                        <div class="div">
+                            <h3>有好货</h3>
+                            <h2>高颜值美物</h2>
+                            <img src="../images/18.png" alt="">
+                        </div>
+                        <img src="../images/19.png" alt="" class="img">
+                    </div>
+                    <div class="list3 list">
+                        <div class="div">
+                            <h3>哇哦视频</h3>
+                            <h2>有料小视频</h2>
+                            <img src="../images/20.png" alt="">
+                        </div>
+                        <img src="../images/21.png" alt="" class="img">
+                    </div>
+                    <div class="list4 list">
+                        <div class="div">
+                            <h3>必买清单</h3>
+                            <h2>什么值得买</h2>
+
+                            <img src="../images/22.png" alt="">
+                        </div>
+                        <img src="../images/23.png" alt="" class="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <i class="icon iconfont icon-taobao1"></i>
+
+            <a href="#">
+                <i class="icon iconfont icon-weichat"></i>
+                <p>微淘</p>
+            </a>
+            <a href="#">
+                <i class="icon iconfont icon-douban1"></i>
+                <p>消息</p>
+            </a>
+            <a href="#">
+                <i class="icon iconfont icon-renren1"></i>
+                <p>购物车</p>
+            </a>
+            <a href="#">
+                <i class="icon iconfont icon-email"></i>
+                <p>我的淘宝</p>
+            </a>
+
+        </div>
+    </div>
+</body>
+
+<script src="../js/flexible.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/better-scroll.js"></script>
+<script>
+    let swiper = new Swiper('.swiper-container', {
+        loop: true,
+        autoplay: true,
+        pagination: {
+            el: '.swiper-pagination'
+        }
+    })
+
+    let bscroll = new BScroll('.Bscro', {
+        click: true,
+        probeType: 2
+    })
+</script>
+
+</html
