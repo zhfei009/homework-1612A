@@ -1,0 +1,467 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  font-family: STHeitiSC-Light;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html,
+body,
+form,
+fieldset,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-text-size-adjust: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  font-family: arial, sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+ins,
+a {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  display: inline-block;
+}
+
+input,
+textarea {
+  border: none;
+  background: none;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+  -o-tap-highlight-color: transparent;
+}
+
+/*html {
+    font-size: $browser-default-font-size;
+}*/
+html {
+  font-size: 37.5px;
+}
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+header {
+  width: 100%;
+  height: 1.33333rem;
+  background: #ff6400;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 0 0.26667rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+header .icon1,
+header .icon2 {
+  text-align: center;
+  font-size: 0.48rem;
+  color: #fff;
+}
+
+header .icon1 .icon,
+header .icon2 .icon {
+  font-size: 0.48rem;
+}
+
+header .cen {
+  -webkit-flex: 1 1 0%;
+  flex: 1 1 0%;
+  margin: 0 0.4rem;
+  padding: 0 0.26667rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.4);
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-align-items: center;
+  align-items: center;
+  height: 0.93333rem;
+  border-radius: 1.33333rem;
+}
+
+header .cen .inp {
+  -webkit-flex: 1 1 0%;
+  flex: 1 1 0%;
+}
+
+header .cen .inp > .icon {
+  font-size: 0.48rem;
+  color: #fff;
+}
+
+header .cen .inp input {
+  -webkit-flex: 1 1 0%;
+  flex: 1 1 0%;
+  color: #fff;
+}
+
+header .cen > .icon {
+  font-size: 0.48rem;
+  color: #fff;
+}
+
+section {
+  width: 100%;
+  -webkit-flex: 1 1 0%;
+  flex: 1 1 0%;
+  background: #ccc;
+  overflow-y: auto;
+}
+
+section .banner {
+  width: 100%;
+}
+
+section .banner .swiper-wrapper {
+  width: 100%;
+  height: 4rem;
+}
+
+section .banner .swiper-wrapper .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+
+section .banner .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+section .banner .swiper-pagination-bullet {
+  width: 0.26667rem;
+  height: 0.26667rem;
+}
+
+section .dls {
+  width: 100%;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-flex: 1 1 0%;
+  flex: 1 1 0%;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  justify-content: center;
+  padding-top: 0.4rem;
+  background: #fff;
+}
+
+section .dls dl {
+  width: 20%;
+  height: 2.13333rem;
+  text-align: center;
+}
+
+section .dls dl dt {
+  width: 1.33333rem;
+  height: 1.33333rem;
+  margin: 0 auto;
+}
+
+section .dls dl dt img {
+  width: 100%;
+  height: 100%;
+}
+
+section .dls dl dd {
+  margin-top: 0.13333rem;
+  font-size: 0.4rem;
+  color: #ccc;
+  text-align: center;
+}
+
+section .title {
+  width: 100%;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 0 0 0 0.26667rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+section .title img {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+section .title .re {
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+section .title .re .lef,
+section .title .re .rig {
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+}
+
+section .title .re .lef span,
+section .title .re .rig span {
+  font-size: 0.4rem;
+  border: solid 1px orange;
+}
+
+section .title .re .lef p,
+section .title .re .rig p {
+  font-size: 0.37333rem;
+}
+
+section .title .re .lef:nth-child(1) {
+  margin: 0.26667rem 0;
+}
+
+section .list {
+  width: 100%;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 0.26667rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #fff;
+  margin-top: 0.26667rem;
+  padding-top: 0.26667rem;
+}
+
+section .list dl {
+  width: 50%;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+}
+
+section .list dl dt .top h1 {
+  font-size: 0.53333rem;
+  color: red;
+}
+
+section .list dl dd {
+  width: 2.4rem;
+}
+
+section .list dl dd img {
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  height: 1.33333rem;
+  background: #f6ebef;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+footer dl {
+  width: 25%;
+  text-align: center;
+}
+
+footer dl dt .icon {
+  font-size: 0.42667rem;
+}
+
+footer dl dd {
+  font-size: 0.42667rem;
+}
+
+footer dl:nth-child(1) > dt > .icon {
+  color: #ff6400;
+  font-size: 0.93333rem;
+}
