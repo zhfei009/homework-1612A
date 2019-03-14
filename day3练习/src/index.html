@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+</head>
+
+<body>
+    <div class="box">
+        <div class="head">
+            <div>
+                <h1>北京^</h1>
+            </div>
+            <div class="div1"><input type="text" placeholder="今天作业"></div>
+            <div class="div2">
+                <dl>
+                    <dt><img src="./img/ren.png" alt=""></dt>
+                    <dd>我的</dd>
+                </dl>
+            </div>
+        </div>
+        <div class="cont">
+            <div>
+                <div class="main">
+                    <!-- 轮播 -->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./img/lun1.png" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/lun2.png" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/lun3.png" alt=""></div>
+                        </div>
+                    </div>
+                    <!-- 导航 -->
+                    <div class="nav">
+                        <dl>
+                            <dt><img src="./img/a1.png" alt=""></dt>
+                            <dd>美食</dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="./img/a2.png" alt=""></dt>
+                            <dd>美食</dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="./img/a3.png" alt=""></dt>
+                            <dd>美食</dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="./img/a4.png" alt=""></dt>
+                            <dd>美食</dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="./img/a5.png" alt=""></dt>
+                            <dd>美食</dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="./img/a1.png" alt=""></dt>
+                            <dd>美食</dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="./img/a2.png" alt=""></dt>
+                            <dd>美食</dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="./img/a3.png" alt=""></dt>
+                            <dd>美食</dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="./img/a4.png" alt=""></dt>
+                            <dd>美食</dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="./img/a5.png" alt=""></dt>
+                            <dd>美食</dd>
+                        </dl>
+                    </div>
+                    <div class="conter">
+                        <p>猜你喜欢</p>
+                        <div class="xuanran">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foot">
+
+        </div>
+    </div>
+</body>
+<script src="./js/better-scroll.js"></script>
+<script src="./js/flexible.js"></script>
+<script src="./js/swiper.min.js"></script>
+<script>
+    let swiper = new Swiper('.swiper-container', {
+        autoplay: true
+    })
+    let bscroll = new BScroll('.cont')
+
+    const xhr = new XMLHttpRequest();
+    xhr.open('get', '/api/list', true)
+    xhr.send()
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+                console.log(JSON.parse(xhr.responseText))
+                render(JSON.parse(xhr.responseText).list)
+            }
+        }
+    }
+
+    function render(data) {
+        let str = ''
+        data.forEach(file => {
+            str += `
+            <dl>
+                <dt>
+                    <img src="./img/c1.png" alt="">
+                </dt>
+                <dd>
+                    <h1>${file.name}</h1>
+                    <p>${file.url}</p>
+                    <div><span>${file.money}</span>${file.men} <span>${file.shou}</span></div>
+                </dd>
+            </dl>
+            `
+        })
+        const div = document.querySelector('.xuanran')
+        div.innerHTML = str
+    }
+</script>
+
+</html>

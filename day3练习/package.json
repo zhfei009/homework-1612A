@@ -1,0 +1,31 @@
+{
+    "name": "day3",
+    "version": "1.0.0",
+    "description": "练习",
+    "main": "gulpfile.js",
+    "dependencies": {
+        "gulp": "^4.0.0",
+        "gulp-sass": "*",
+        "gulp-clean-css": "*",
+        "gulp-uglify": "*",
+        "gulp-htmlmin": "*",
+        "gulp-webserver": "*"
+
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "gulp dev",
+        "build": "gulp build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/zjx001/day3.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/zjx001/day3/issues"
+    },
+    "homepage": "https://github.com/zjx001/day3#readme"
+}
