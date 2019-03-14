@@ -1,0 +1,27 @@
+{
+    "name": "gulp-meituan",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "gulp watch",
+        "build": "gulp lineserver"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "gulp": "^4.0.0",
+        "gulp-sass": "*",
+        "gulp-autoprefixer": "*",
+        "gulp-concat": "*",
+        "gulp-clean-css": "*",
+        "gulp-babel": "7.0.0",
+        "babel-core": "*",
+        "babel-preset-es2015": "*",
+        "gulp-uglify": "*",
+        "gulp-htmlmin": "*",
+        "gulp-webserver": "*"
+    }
+}

@@ -1,0 +1,170 @@
+@import "common.scss";
+@import "_minix.scss";
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .header {
+        width: 100%;
+        height: px2rem(50px);
+        background: #06c1ae;
+        .head {
+            width: 100%;
+            height: px2rem(50px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            .city {
+                width: 20%;
+                height: 100%;
+                color: #fff;
+                font-size: px2rem(18px);
+                line-height: px2rem(50px);
+            }
+            .search {
+                width: 70%;
+                height: 100%;
+                position: relative;
+                margin-top: px2rem(10px);
+                // align-items: center;
+                i {
+                    position: absolute;
+                    font-size: px2rem(18px);
+                    color: #fff;
+                    left: px2rem(5px);
+                    top: px2rem(10px);
+                }
+                input {
+                    display: block;
+                    width: 100%;
+                    height: 80%;
+                    background: #13afa0;
+                    text-indent: px2rem(28px);
+                }
+            }
+            .person {
+                width: 10%;
+                height: 100%;
+                margin-top: px2rem(5px);
+                i {
+                    font-size: px2rem(20px);
+                    color: #fff;
+                }
+                p {
+                    color: #fff;
+                    font-size: px2rem(14px);
+                }
+            }
+        }
+    }
+    .main {
+        width: 100%;
+        flex: 1;
+        overflow-y: scroll;
+        background: #ccc;
+        .nav {
+            width: 100%;
+            height: px2rem(110px);
+            background: rgb(93, 240, 208);
+            h1 {
+                height: 50%;
+                text-align: center;
+                line-height: px2rem(55px);
+                font-size: px2rem(20px);
+            }
+            .app {
+                width: 100%;
+                height: 50%;
+                display: flex;
+                justify-content: space-around;
+                font-size: px2rem(18px);
+                text-align: center;
+                a {
+                    width: 40%;
+                    height: 80%;
+                    display: block;
+                    color: #fff;
+                    border: px2rem(2px) solid rgb(56, 216, 203);
+                    border-radius: px2rem(35px);
+                    line-height: px2rem(48px);
+                }
+            }
+        }
+        .icon-list {
+            width: 100%;
+            height: px2rem(180px);
+            background: #fff;
+            .swiper-slide {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                text-align: center;
+                align-items: center;
+                a {
+                    width: 20%;
+                    height: 50%;
+                    color: #252924;
+                    margin-top: px2rem(5px);
+                    img {
+                        width: 80%;
+                        height: 60%;
+                    }
+                }
+            }
+        }
+        .content {
+            width: 100%;
+            padding: 0 px2rem(5px);
+            background: #fff;
+            margin-top: px2rem(10px);
+            .cont-title {
+                width: 100%;
+                height: px2rem(40px);
+                font-size: px2rem(16px);
+                line-height: px2rem(40px);
+            }
+        }
+        .cont-item {
+            width: 100%;
+            height: px2rem(80px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .left {
+                width: 30%;
+                height: 100%;
+                text-align: center;
+                img {
+                    width: 80%;
+                    height: 100%;
+                    // line-height: px2rem(80px);
+                }
+            }
+            .right {
+                width: 70%;
+                height: 100%;
+                // align-items: center;
+                span {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-top: px2rem(5px);
+                }
+                .title {
+                    width: 100%;
+                    font-size: px2rem(18px);
+                }
+                .price {
+                    display: flex;
+                    justify-content: space-around;
+                }
+                .active {
+                    color: #21f0cd;
+                    font-size: px2rem(16px);
+                }
+            }
+        }
+    }
+}
