@@ -1,0 +1,32 @@
+{
+  "name": "mt",
+  "version": "1.0.0",
+  "description": "gulp （美团）",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lixinyu923/-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lixinyu923/-/issues"
+  },
+  "homepage": "https://github.com/lixinyu923/-#readme",
+  "devDependencies": {
+    "gulp-sass": "^4.0.2",
+    "gulp-autoprefixer": "*",
+    "gulp-concat": "*",
+    "gulp-clean-css": "*",
+    "gulp-htmlmin": "*",
+    "gulp-babel": "^7.0.0",
+    "babel-core": "*",
+    "babel-preset-es2015": "*",
+    "gulp-uglify": "*",
+    "gulp-webserver": "*"
+  }
+}
