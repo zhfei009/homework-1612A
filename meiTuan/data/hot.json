@@ -1,0 +1,34 @@
+[
+    {
+        "img":"images/maigou.jpg",
+        "title":"华莱士",
+        "meg":"[15店通用]鸡腿堡+薯条+中杯可乐",
+        "pic":"13元",
+        "yuan":"门市价：31元",
+        "people":"已售4321"
+    },
+    {
+        "img":"images/maigou.jpg",
+        "title":"吉野家",
+        "meg":"[15店通用]卤肉饭+中杯汽水/紫菜蛋花汤",
+        "pic":"10元",
+        "yuan":"门市价：21元",
+        "people":"已售9321"
+    },
+    {
+        "img":"images/maigou.jpg",
+        "title":"华莱士",
+        "meg":"[15店通用]鸡腿堡+薯条+中杯可乐",
+        "pic":"13元",
+        "yuan":"门市价：31元",
+        "people":"已售4321"
+    },
+    {
+        "img":"images/maigou.jpg",
+        "title":"吉野家",
+        "meg":"[15店通用]卤肉饭+中杯汽水/紫菜蛋花汤",
+        "pic":"10元",
+        "yuan":"门市价：21元",
+        "people":"已售9321"
+    }
+]
