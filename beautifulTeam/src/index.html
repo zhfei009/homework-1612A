@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="common/swiper-4.3.5.min.css">
+    <link rel="stylesheet" href="common/fonts/iconfont.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <header class="header">
+            <div class="address">
+                <span>北京</span><i class="iconfont icon-xiangxia"></i>
+            </div>
+            <form action="">
+                <i class="iconfont icon-fangdajing"></i>
+                <input type="text" placeholder="输入商家/品类/商圈">
+            </form>
+            <div class="wode">
+                <i class="iconfont icon-wode"></i>
+                <p>我的</p>
+            </div>
+        </header>
+        <section class="main">
+            <div class="head">
+                <img src="./images/title_02.gif" alt="">
+                <div class="btnArr">
+                    <span>打开美团APP</span><span class="active">下载APP优惠大</span>
+                </div>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide wrap">
+                        <a href="">
+                            <img src="./images/logo1_05.gif" alt="">
+                            <p>美食</p>
+                        </a>
+                        <a href="">
+                            <img src="./images/logo2_07.gif" alt="">
+                            <p>猫眼电影</p>
+                        </a>
+                        <a href="">
+                            <img src="./images/logo3_09.gif" alt="">
+                            <p>酒店</p>
+                        </a>
+                        <a href="">
+                            <img src="./images/logo4_11.gif" alt="">
+                            <p>休闲娱乐</p>
+                        </a>
+                        <a href="">
+                            <img src="./images/logo4_13.gif" alt="">
+                            <p>外卖</p>
+                        </a>
+                        <a href="">
+                            <img src="./images/logo5_20.gif" alt="">
+                            <p>KTV</p>
+                        </a>
+                        <a href="">
+                            <img src="./images/logo6_21.gif" alt="">
+                            <p>周边游</p>
+                        </a>
+                        <a href="">
+                            <img src="./images/logo7_22.gif" alt="">
+                            <p>丽人</p>
+                        </a>
+                        <a href="">
+                            <img src="./images/logo7_23.gif" alt="">
+                            <p>小吃快餐</p>
+                        </a>
+                        <a href="">
+                            <img src="./images/logo9_24.gif" alt="">
+                            <p>火车票</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide wrap">
+                        <a href="">
+                            <img src="./images/logo1_05.gif" alt="">
+                            <p>美食</p>
+                        </a>
+                        <a href="">
+                            <img src="./images/logo1_05.gif" alt="">
+                            <p>猫眼电影</p>
+                        </a>
+                        <a href="">
+                            <img src="./images/logo3_09.gif" alt="">
+                            <p>酒店</p>
+                        </a>
+                        <a href="">
+                            <img src="./images/logo4_11.gif" alt="">
+                            <p>休闲娱乐</p>
+                        </a>
+                        <a href="">
+                            <img src="./images/logo4_13.gif" alt="">
+                            <p>外卖</p>
+                        </a>
+                        <a href="">
+                            <img src="./images/logo5_20.gif" alt="">
+                            <p>KTV</p>
+                        </a>
+                        <a href="">
+                            <img src="./images/logo6_21.gif" alt="">
+                            <p>周边游</p>
+                        </a>
+                        <a href="">
+                            <img src="./images/logo7_22.gif" alt="">
+                            <p>丽人</p>
+                        </a>
+                        <a href="">
+                            <img src="./images/logo7_23.gif" alt="">
+                            <p>小吃快餐</p>
+                        </a>
+                        <a href="">
+                            <img src="./images/logo9_24.gif" alt="">
+                            <p>火车票</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="youlove">
+                <div class="title">猜你喜欢</div>
+                <dl>
+                    <dt><img src="./images/eat_30.gif" alt=""></dt>
+                    <dd>
+                        <div class="tit">华莱士</div>
+                        <div class="pedding">
+                            [15店通用]鸡腿堡+薯条+中杯可乐1份
+                        </div>
+                        <div class="des">
+                            <div class="left">
+                               <div class="price">13元</div>
+                               <span>门市价:31元</span> 
+                            </div>
+                            <div class="right">
+                                已售4321
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                        <dt><img src="./images/eat2_33.gif" alt=""></dt>
+                        <dd>
+                            <div class="tit">华莱士</div>
+                            <div class="pedding">
+                                [15店通用]鸡腿堡+薯条+中杯可乐1份
+                            </div>
+                            <div class="des">
+                                <div class="left">
+                                   <div class="price">13元</div>
+                                   <span>门市价:31元</span> 
+                                </div>
+                                <div class="right">
+                                    已售4321
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>
+            </div>
+        </section>
+    </div>
+    <script src="common/flexible.js"></script>
+    <script src="common/swiper-4.3.5.min.js"></script>
+    <script>
+    
+    const swiper=new Swiper('.swiper-container',{
+        loop: true,
+        autoplay:true,
+        pagination:{
+            el:'.swiper-pagination'
+        }
+    })
+    </script>
+</body>
+</html>
