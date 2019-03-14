@@ -192,7 +192,7 @@ html {
 }
 
 body {
-  background: #ccc;
+  background: #eee;
 }
 
 .wrap {
@@ -200,6 +200,7 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .wrap .head {
@@ -209,6 +210,7 @@ body {
   display: flex;
   padding: 0 0.21333rem;
   align-items: center;
+  z-index: 10;
 }
 
 .wrap .head .headleft {
@@ -275,6 +277,8 @@ body {
 
 .wrap .main {
   flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .wrap .main .mainhead {
@@ -288,9 +292,10 @@ body {
 }
 
 .wrap .main .mainswiper {
-  width: 95%;
+  width: 100%;
   height: 4.26667rem;
-  margin: 0.08rem auto;
+  margin: 0.05333rem auto;
+  background: #fff;
 }
 
 .wrap .main .mainswiper .swiper-container {
@@ -326,11 +331,78 @@ body {
 .wrap .main .mainswiper .swiper-container .swiper-pagination span {
   width: 0.21333rem;
   height: 0.21333rem;
+  background: #000;
+}
+
+.wrap .main .mainlist {
+  width: 100%;
+  flex: 1;
+  margin-top: 0.26667rem;
+}
+
+.wrap .main .mainlist h2 {
+  width: 100%;
+  height: 1.06667rem;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+  line-height: 1.06667rem;
+  background: #ffff;
+  padding-left: 0.13333rem;
+  font-size: 0.4rem;
+}
+
+.wrap .main .mainlist .mainmain {
   background: #fff;
+}
+
+.wrap .main .mainlist .mainmain .maindata {
+  width: 100%;
+  height: 3.2rem;
+  border-bottom: 1px solid #ccc;
+  padding: 0.13333rem 0.13333rem;
+  display: flex;
+}
+
+.wrap .main .mainlist .mainmain .maindata .datalist {
+  flex: 3;
+  height: 2.61333rem;
+}
+
+.wrap .main .mainlist .mainmain .maindata .datalist img {
+  width: 100%;
+  height: 100%;
+}
+
+.wrap .main .mainlist .mainmain .maindata .dataright {
+  flex: 7;
+  height: 2.61333rem;
+  margin-left: 0.13333rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrap .main .mainlist .mainmain .maindata .dataright p {
+  width: 100%;
+  height: 0.93333rem;
+  line-height: 0.93333rem;
+}
+
+.wrap .main .mainlist .mainmain .maindata .dataright .databottom {
+  display: flex;
+}
+
+.wrap .main .mainlist .mainmain .maindata .dataright .databottom p b {
+  color: #18c5b4;
+  font-size: 0.34667rem;
+}
+
+.wrap .main .mainlist .mainmain .maindata .dataright .databottom .right {
+  text-align: right;
 }
 
 .wrap .footer {
   width: 100%;
   height: 1.06667rem;
   background: #06c1ae;
+  z-index: 10;
 }

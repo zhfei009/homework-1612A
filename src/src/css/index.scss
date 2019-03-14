@@ -8,7 +8,7 @@
 }
 
 body {
-    background: #ccc;
+    background: #eee;
 }
 
 .wrap {
@@ -16,6 +16,7 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
     .head {
         width: 100%;
         height: px2rem(46px);
@@ -23,6 +24,7 @@ body {
         display: flex;
         padding: 0 px2rem(8px);
         align-items: center;
+        z-index: 10;
         .headleft {
             flex: 1.5;
             height: px2rem(35px);
@@ -79,6 +81,8 @@ body {
     }
     .main {
         flex: 1;
+        display: flex;
+        flex-direction: column;
         .mainhead {
             width: 100%;
             height: px2rem(107px);
@@ -88,9 +92,10 @@ body {
             }
         }
         .mainswiper {
-            width: 95%;
+            width: 100%;
             height: px2rem(160px);
-            margin: px2rem(3px) auto;
+            margin: px2rem(2px) auto;
+            background: #fff;
             .swiper-container {
                 width: 100%;
                 height: 100%;
@@ -120,7 +125,65 @@ body {
                     span {
                         width: px2rem(8px);
                         height: px2rem(8px);
-                        background: #fff;
+                        background: #000;
+                    }
+                }
+            }
+        }
+        .mainlist {
+            width: 100%;
+            flex: 1;
+            margin-top: px2rem(10px);
+            h2 {
+                width: 100%;
+                height: px2rem(40px);
+                border-bottom: 1px solid #ccc;
+                text-align: left;
+                line-height: px2rem(40px);
+                background: #ffff;
+                padding-left: px2rem(5px);
+                font-size: px2rem(15px);
+            }
+            .mainmain {
+                background: #fff;
+                .maindata {
+                    width: 100%;
+                    height: px2rem(120px);
+                    border-bottom: 1px solid #ccc;
+                    padding: px2rem(5px) px2rem(5px);
+                    // background: yellow;
+                    display: flex;
+                    .datalist {
+                        flex: 3;
+                        height: px2rem(98px);
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .dataright {
+                        flex: 7;
+                        height: px2rem(98px);
+                        margin-left: px2rem(5px);
+                        display: flex;
+                        flex-direction: column;
+                        p {
+                            width: 100%;
+                            height: px2rem(35px);
+                            line-height: px2rem(35px);
+                        }
+                        .databottom {
+                            display: flex;
+                            p {
+                                b {
+                                    color: #18c5b4;
+                                    font-size: px2rem(13px);
+                                }
+                            }
+                            .right {
+                                text-align: right;
+                            }
+                        }
                     }
                 }
             }
@@ -130,5 +193,6 @@ body {
         width: 100%;
         height: px2rem(40px);
         background: #06c1ae;
+        z-index: 10;
     }
 }

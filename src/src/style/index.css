@@ -1,0 +1,326 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  font-family: STHeitiSC-Light;
+  font: inherit;
+  vertical-align: baseline; }
+
+html,
+body,
+form,
+fieldset,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-text-size-adjust: none; }
+
+html,
+body {
+  width: 100%;
+  height: 100%; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  font-family: arial, sans-serif; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+ins,
+a {
+  text-decoration: none; }
+
+del {
+  text-decoration: line-through; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  display: inline-block; }
+
+input,
+textarea {
+  border: none;
+  background: none;
+  outline: none;
+  -webkit-appearance: none; }
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  -ms-tap-highlight-color: rgba(0, 0, 0, 0);
+  -o-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+/*html {
+    font-size: $browser-default-font-size;
+}*/
+html {
+  font-size: 37.5px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box; }
+
+body {
+  background: #eee; }
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; }
+  .wrap .head {
+    width: 100%;
+    height: 1.22667rem;
+    background: #06c1ae;
+    display: flex;
+    padding: 0 0.21333rem;
+    align-items: center;
+    z-index: 10; }
+    .wrap .head .headleft {
+      flex: 1.5;
+      height: 0.93333rem;
+      display: flex;
+      line-height: 0.93333rem;
+      color: #ccc; }
+      .wrap .head .headleft .p1 {
+        flex: 7;
+        font-size: 0.4rem;
+        color: #fff;
+        text-align: center; }
+      .wrap .head .headleft .p2 {
+        flex: 3;
+        font-size: 0.4rem;
+        color: #fff;
+        text-align: left; }
+    .wrap .head form {
+      flex: 6;
+      height: 0.93333rem;
+      background: rgba(0, 0, 0, 0.5);
+      margin: 0 0.13333rem;
+      display: flex;
+      align-items: center; }
+      .wrap .head form .icon-fangdajing {
+        flex: 2;
+        font-size: 0.53333rem;
+        color: #fff;
+        text-align: center; }
+      .wrap .head form input {
+        flex: 8; }
+    .wrap .head .headright {
+      flex: 1;
+      height: 0.93333rem;
+      display: flex;
+      flex-direction: column; }
+      .wrap .head .headright .icon-icongerenzhongxin-01 {
+        width: 100%;
+        height: 0.53333rem;
+        font-size: 0.53333rem;
+        color: #fff;
+        text-align: center; }
+      .wrap .head .headright a {
+        color: #fff;
+        text-align: center; }
+  .wrap .main {
+    flex: 1;
+    display: flex;
+    flex-direction: column; }
+    .wrap .main .mainhead {
+      width: 100%;
+      height: 2.85333rem; }
+      .wrap .main .mainhead img {
+        width: 100%;
+        height: 100%; }
+    .wrap .main .mainswiper {
+      width: 100%;
+      height: 4.26667rem;
+      margin: 0.05333rem auto;
+      background: #fff; }
+      .wrap .main .mainswiper .swiper-container {
+        width: 100%;
+        height: 100%; }
+        .wrap .main .mainswiper .swiper-container .swiper-wrapper {
+          width: 100%;
+          height: 100%; }
+          .wrap .main .mainswiper .swiper-container .swiper-wrapper .swiper-slide {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center; }
+            .wrap .main .mainswiper .swiper-container .swiper-wrapper .swiper-slide a {
+              width: 20%;
+              height: 1.54667rem;
+              text-align: center; }
+              .wrap .main .mainswiper .swiper-container .swiper-wrapper .swiper-slide a img {
+                width: 1.06667rem;
+                height: 0.90667rem;
+                border-radius: 0.90667rem; }
+        .wrap .main .mainswiper .swiper-container .swiper-pagination span {
+          width: 0.21333rem;
+          height: 0.21333rem;
+          background: #000; }
+    .wrap .main .mainlist {
+      width: 100%;
+      flex: 1;
+      margin-top: 0.26667rem; }
+      .wrap .main .mainlist h2 {
+        width: 100%;
+        height: 1.06667rem;
+        border-bottom: 1px solid #ccc;
+        text-align: left;
+        line-height: 1.06667rem;
+        background: #ffff;
+        padding-left: 0.13333rem;
+        font-size: 0.4rem; }
+      .wrap .main .mainlist .mainmain {
+        background: #fff; }
+        .wrap .main .mainlist .mainmain .maindata {
+          width: 100%;
+          height: 3.2rem;
+          border-bottom: 1px solid #ccc;
+          padding: 0.13333rem 0.13333rem;
+          display: flex; }
+          .wrap .main .mainlist .mainmain .maindata .datalist {
+            flex: 3;
+            height: 2.61333rem; }
+            .wrap .main .mainlist .mainmain .maindata .datalist img {
+              width: 100%;
+              height: 100%; }
+          .wrap .main .mainlist .mainmain .maindata .dataright {
+            flex: 7;
+            height: 2.61333rem;
+            margin-left: 0.13333rem;
+            display: flex;
+            flex-direction: column; }
+            .wrap .main .mainlist .mainmain .maindata .dataright p {
+              width: 100%;
+              height: 0.93333rem;
+              line-height: 0.93333rem; }
+            .wrap .main .mainlist .mainmain .maindata .dataright .databottom {
+              display: flex; }
+              .wrap .main .mainlist .mainmain .maindata .dataright .databottom p b {
+                color: #18c5b4;
+                font-size: 0.34667rem; }
+              .wrap .main .mainlist .mainmain .maindata .dataright .databottom .right {
+                text-align: right; }
+  .wrap .footer {
+    width: 100%;
+    height: 1.06667rem;
+    background: #06c1ae;
+    z-index: 10; }
