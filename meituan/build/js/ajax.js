@@ -1,0 +1,1 @@
+"use strict";var $={ajax:function ajax(opt){var xhr=window.XMLHttpRequest?new XMLHttpRequest:new ActiveXObject("Microsoft.XMLHTTP");xhr.open("get",opt.url,!0),xhr.onreadystatechange=function(){4===xhr.readyState?200===xhr.status&&opt.success&&opt.success(eval("("+xhr.responseText+")")):opt.error&&opt.error()},xhr.send()}};

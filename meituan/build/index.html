@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <link rel="stylesheet" href="css/swiper.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+              <div class="city">
+                  <span>北京</span>
+                  <i class="icon iconfont icon-angle-down"></i>
+              </div>
+              <div class="search">
+                  <input type="text" placeholder="搜索内容">
+                  <i class="icon iconfont icon-fangdajing"></i>
+              </div>
+              <div class="head-right">
+                <i class="icon iconfont icon-wode-xuanzhong"></i>
+                <p>我的</p>
+              </div>
+        </header>
+        <div class="main">
+            <div class="box">
+                <div class="APP">
+                    <img src="//ms0.meituan.net/touch/img/download_banner.png" alt="">
+                </div>
+                <div class="swiper-container nav">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img src="images/nav01.png" alt="">
+                                <p>美食</p>
+                            </a>
+                            <a href="">
+                                <img src="images/nav02.png" alt="">
+                                <p>美食</p>
+                            </a>
+                             <a href="">
+                                <img src="images/nav03.png" alt="">
+                                <p>美食</p>
+                            </a>
+                            <a href="">
+                                <img src="images/nav04.png" alt="">
+                                <p>美食</p>
+                            </a> 
+                            <a href="">
+                                <img src="images/nav05.png" alt="">
+                                <p>美食</p>
+                            </a>
+                            <a href="">
+                                <img src="images/nav06.png" alt="">
+                                <p>美食</p>
+                            </a>
+                            <a href="">
+                                <img src="images/nav07.png" alt="">
+                                <p>美食</p>
+                            </a>
+                            <a href="">
+                                <img src="images/nav08.png" alt="">
+                                <p>美食</p>
+                            </a> 
+                            <a href="">
+                                <img src="images/nav09.png" alt="">
+                                <p>美食</p>
+                            </a>
+                            <a href="">
+                                <img src="images/nav10.png" alt="">
+                                <p>美食</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img src="images/nav11.png" alt="">
+                                <p>美食</p>
+                            </a>
+                            <a href="">
+                                <img src="images/nav12.png" alt="">
+                                <p>美食</p>
+                            </a> <a href="">
+                                <img src="images/nav13.png" alt="">
+                                <p>美食</p>
+                            </a>
+                            <a href="">
+                                <img src="images/nav14.png" alt="">
+                                <p>美食</p>
+                            </a> <a href="">
+                                <img src="images/nav15.png" alt="">
+                                <p>美食</p>
+                            </a>
+                            <a href="">
+                                <img src="images/nav16.png" alt="">
+                                <p>美食</p>
+                            </a>
+                            <a href="">
+                                <img src="images/nav17.png" alt="">
+                                <p>美食</p>
+                            </a>
+                            <a href="">
+                                <img src="images/nav18.png" alt="">
+                                <p>美食</p>
+                            </a> 
+                            <a href="">
+                                <img src="images/nav19.png" alt="">
+                                <p>美食</p>
+                            </a>
+                            <a href="">
+                                <img src="images/nav20.png" alt="">
+                                <p>美食</p>
+                            </a>
+                        </div>
+                    </div>
+                 <div class="swiper-pagination"></div>
+                 
+                  
+                </div>
+                <div class="list">
+                    <div class="title">猜你喜欢</div>
+                    <div class="like-box">
+                        <!-- <dl>
+                            <dt><img src="></dt>
+                            <dd>
+                                <h2>松香自助餐厅</h2>
+                                <span>[王府井/东单]单人自助</span>
+                                <div class="bottom">
+                                    <p>46元</p>
+                                    <span>门市价：69元</span>
+                                </div>
+                            </dd>
+                            <div class="sale">已售4409</div>
+                        </dl> -->
+                     
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <a href="">
+                <i class="icon iconfont icon-wode-xuanzhong"></i>
+                <p>我的</p>
+            </a>
+            <a href="">
+                <i class="icon iconfont icon-wode-xuanzhong"></i>
+                <p>我的</p>
+            </a>
+            <a href="">
+                <i class="icon iconfont icon-wode-xuanzhong"></i>
+                <p>我的</p>
+            </a>
+            <a href="">
+                <i class="icon iconfont icon-wode-xuanzhong"></i>
+                <p>我的</p>
+            </a>
+        </div>
+    </div>
+    <script src="scripts/bscroll.min.js"></script>
+    <script src="scripts/flexible.js"></script>
+    <script src="scripts/swiper.min.js"></script>
+    <script src="scripts/ajax.js"></script>
+    <script src="scripts/index.js"></script>
+    <script>
+    
+    var swiper1 = new Swiper(".nav",{
+       
+        loop:true,
+        pagination:{
+            el:".swiper-pagination",
+            clickabel:true
+        },
+
+    })
+    var scroll = new BScroll(".main",{
+
+    })
+    </script>
+</body>
+</html>
