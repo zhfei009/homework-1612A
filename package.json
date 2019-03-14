@@ -1,0 +1,30 @@
+{
+    "name": "zuoye1",
+    "version": "1.0.0",
+    "description": "",
+    "main": "gulpfile.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "gulp dev",
+        "bulid": "gulp bulid"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/songJW0128/zuoye1.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/songJW0128/zuoye1/issues"
+    },
+    "homepage": "https://github.com/songJW0128/zuoye1#readme",
+    "devDependencies": {
+        "gulp": "^4.0.0",
+        "gulp-clean-css": "^4.0.0",
+        "gulp-htmlmin": "^5.0.1",
+        "gulp-sass": "^4.0.2",
+        "gulp-uglify": "^3.0.1",
+        "gulp-webserver": "^0.9.1"
+    }
+}

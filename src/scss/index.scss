@@ -1,0 +1,157 @@
+@import "_minix.scss";
+@import "common.scss";
+.wrap {
+    width: 100%;
+    height: 100%;
+    @include box_flex;
+    @include direction(column);
+}
+
+header {
+    width: 100%;
+    height: pxTorem(50px);
+    background: #00c3b1;
+    @include box_flex;
+    @include justify(space-between);
+    @include align;
+    padding: 0 pxTorem(10px);
+    @include sizing;
+    h1 {
+        font-size: pxTorem(18px);
+        color: #fff;
+    }
+    .topCent {
+        @include flex;
+        height: pxTorem(30px);
+        line-height: pxTorem(30px);
+        margin: 0 pxTorem(10px);
+        background: rgba(0, 0, 0, 0.3);
+        .icon {
+            padding: 0 pxTorem(5px);
+            font-size: pxTorem(18px);
+            color: #fff;
+        }
+        input#search {
+            width: 82%;
+        }
+        >input::-webkit-input-placeholder {
+            color: #00c3b1;
+            font-size: pxTorem(18px);
+        }
+    }
+    .topRig {
+        text-align: center;
+        .icon,
+        p {
+            font-size: pxTorem(18px);
+            color: #fff;
+        }
+    }
+}
+
+section {
+    width: 100%;
+    @include flex;
+    background: #ccc;
+    overflow: hidden;
+    .imG {
+        width: 100%;
+        height: pxTorem(100px);
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .banner {
+        width: 100%;
+        background: #fff;
+        .swiper-wrapper {
+            width: 100%;
+            .swiper-slide {
+                width: 100%;
+                @include box_flex;
+                @include flexWrap(wrap);
+                padding: pxTorem(15px) 0;
+                dl {
+                    width: 20%;
+                    height: pxTorem(90px);
+                    text-align: center;
+                    dt {
+                        width: pxTorem(50px);
+                        height: pxTorem(50px);
+                        margin: 0 auto;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    dd {
+                        margin-top: pxTorem(5px);
+                        font-size: pxTorem(15px);
+                        color: #ccc;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .swiper-pagination-bullet {
+            width: pxTorem(10px);
+            height: pxTorem(10px);
+        }
+    }
+    .list {
+        background: #fff;
+        margin-top: pxTorem(13px);
+        >h1 {
+            margin-left: pxTorem(10px);
+            height: pxTorem(44px);
+            line-height: pxTorem(44px);
+            font-size: pxTorem(20px);
+            border-bottom: solid 1px #ccc;
+        }
+        .listUl {
+            @include flex;
+            li {
+                @include box_flex;
+                padding: pxTorem(10px) pxTorem(10px);
+                border-bottom: solid 1px #000;
+                @include sizing;
+                img {
+                    width: pxTorem(92px);
+                    height: pxTorem(84px);
+                }
+                .box {
+                    @include box_flex;
+                    @include direction(column);
+                    @include justify(space-between);
+                    margin-left: pxTorem(10px);
+                    .topList {
+                        width: 100%;
+                        >h1 {
+                            font-size: pxTorem(18px);
+                            line-height: pxTorem(30px);
+                        }
+                        >p {
+                            font-size: pxTorem(15px);
+                            color: #ccc;
+                        }
+                    }
+                    .bottList {
+                        @include box_flex;
+                        @include align;
+                        @include justify(space-between);
+                        p {
+                            >span {
+                                font-size: pxTorem(18px);
+                                color: #00c3b1;
+                                >em {
+                                    font-size: pxTorem(12px);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
