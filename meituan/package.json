@@ -1,0 +1,33 @@
+{
+    "name": "meituan",
+    "version": "1.0.0",
+    "description": "美团页面练习",
+    "main": "gulpfile.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "gulp dev",
+        "bulid": "gulp bulid"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hejin1121/meituan.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/hejin1121/meituan/issues"
+    },
+    "homepage": "https://github.com/hejin1121/meituan#readme",
+    "devDependencies": {
+        "gulp": "^4.0.0",
+        "gulp-babel": "^7.0.0",
+        "gulp-clean-css": "^4.0.0",
+        "gulp-htmlmin": "^5.0.1",
+        "gulp-sass": "^4.0.2",
+        "gulp-uglify": "^3.0.2",
+        "gulp-webserver": "^0.9.1",
+        "babel-preset-env": "*",
+        "babel-core": "*"
+    }
+}

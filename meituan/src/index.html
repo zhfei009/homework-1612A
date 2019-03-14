@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper-4.3.5.min.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="header-left">
+                <span>北京</span>
+                <i class="iconfont icon-xiangxia"></i>
+            </div>
+            <div class="header-input">
+                <i class="iconfont icon-fangdajing"></i>
+                <input type="text" placeholder="输入商家/商品/商圈">
+            </div>
+            <div class="header-right">
+                <a href="#">
+                    <i class="iconfont icon-gerenxinxi"></i>
+                    <p>我的</p>
+                </a>
+            </div>
+        </div>
+        <div class="main">
+            <div class="banners">
+                <img src="./images/download_banner.png" alt="">
+            </div>
+            <div class="swiper-container banner">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slides">
+                        <a href="#">
+                            <div><img src="./images/index1.png" alt=""></div>
+                            <p>美食</p>
+                        </a>
+                        <a href="#">
+                            <div><img src="./images/index2.png" alt=""></div>
+                            <p>猫眼电影</p>
+                        </a>
+                        <a href="#">
+                            <div><img src="./images/index3.png" alt=""></div>
+                            <p>酒店</p>
+                        </a>
+                        <a href="#">
+                            <div><img src="./images/index4.png" alt=""></div>
+                            <p>休闲娱乐</p>
+                        </a>
+                        <a href="#">
+                            <div><img src="./images/index5.png" alt=""></div>
+                            <p>外卖</p>
+                        </a>
+                        <a href="#">
+                            <div><img src="./images/index6.png" alt=""></div>
+                            <p>ktv</p>
+                        </a>
+                        <a href="#">
+                            <div><img src="./images/index7.png" alt=""></div>
+                            <p>周边游</p>
+                        </a>
+                        <a href="#">
+                            <div><img src="./images/index8.png" alt=""></div>
+                            <p>丽人</p>
+                        </a>
+                        <a href="#">
+                            <div><img src="./images/index9.png" alt=""></div>
+                            <p>小吃快餐</p>
+                        </a>
+                        <a href="#">
+                            <div><img src="./images/index10.png" alt=""></div>
+                            <p>火车票</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide slides">
+                        <a href="#">
+                            <div><img src="./images/nav01.png" alt=""></div>
+                            <p>生活服务</p>
+                        </a>
+                        <a href="#">
+                            <div><img src="./images/nav02.png" alt=""></div>
+                            <p>今日新单</p>
+                        </a>
+                        <a href="#">
+                            <div><img src="./images/nav03.png" alt=""></div>
+                            <p>足疗</p>
+                        </a>
+                        <a href="#">
+                            <div><img src="./images/nav04.png" alt=""></div>
+                            <p>天电影票</p>
+                        </a>
+                        <a href="#">
+                            <div><img src="./images/nav05.png" alt=""></div>
+                            <p>母音亲自</p>
+                        </a>
+                        <a href="#">
+                            <div><img src="./images/nav06.png" alt=""></div>
+                            <p>学习培训</p>
+                        </a>
+                        <a href="#">
+                            <div><img src="./images/nav07.png" alt=""></div>
+                            <p>结婚</p>
+                        </a>
+                        <a href="#">
+                            <div><img src="./images/nav08.png" alt=""></div>
+                            <p>假装</p>
+                        </a>
+                        <a href="#">
+                            <div><img src="./images/nav09.png" alt=""></div>
+                            <p>汽车服务</p>
+                        </a>
+                        <a href="#">
+                            <div><img src="./images/nav10.png" alt=""></div>
+                            <p>区部分了</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-pagination pag"></div>
+            </div>
+            <div class="main-like">
+                <div class="like-title">
+                    <span>猜你喜欢</span>
+                </div>
+                <div class="like-list">
+                    <dl>
+                        <dt><img src="./images/list1.jpg" alt=""></dt>
+                        <dd>
+                            <div class="name">松香餐厅</div>
+                            <p class="mag">[王乐井/东单]单人自助</p>
+                            <p class="mags"><span>46元</span><span>门市价69元</span></p>
+                            <b>已售4413</b>
+                        </dd>
+                    </dl>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/libs/flexible.js"></script>
+    <script src="scripts/libs/swiper-4.3.5.min.js"></script>
+    <script src="scripts/libs/axios.js"></script>
+    <script>
+        let swiper1 = new Swiper('.banner', {
+            pagination: {
+                el: '.swiper-pagination',
+            }
+        })
+        const list = document.querySelector('.like-list');
+        axios.get('/api/lists').then(rel => {
+            const cont = rel.data.data
+            console.log(cont)
+            const data = cont.map(file => {
+                return `<dl>
+                        <dt><img src="${file.image}" alt=""></dt>
+                        <dd>
+                            <div class="name">${file.name}</div>
+                            <p class="mag">${file.mag}</p>
+                            <p class="mags"><span>${file.price}元</span><span>门市价${file.retailp}元</span></p>
+                            <b>已售${file.maichu}</b>
+                        </dd>
+                    </dl>`
+            })
+            list.innerHTML = data
+        })
+    </script>
+</body>
+
+</html>

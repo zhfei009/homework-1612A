@@ -1,0 +1,74 @@
+[{
+        "name": "肯德基",
+        "image": "../images/list1.jpg",
+        "mag": "全家桶,1可乐+成都+限价你+监控",
+        "price": 31,
+        "retailp": 60,
+        "maichu": 2314
+    },
+    {
+        "name": "全聚德",
+        "image": "../images/list2.jpg",
+        "mag": "全家桶,1可乐+成都+限价你+监控",
+        "price": 31,
+        "retailp": 60,
+        "maichu": 2314
+    },
+    {
+        "name": "东来顺饭店",
+        "image": "../images/list3.jpg",
+        "mag": "全家桶,1可乐+成都+限价你+监控",
+        "price": 31,
+        "retailp": 60,
+        "maichu": 2314
+    },
+    {
+        "name": "海底捞",
+        "image": "../images/list4.jpg",
+        "mag": "全家桶,1可乐+成都+限价你+监控",
+        "price": 31,
+        "retailp": 60,
+        "maichu": 2314
+    },
+    {
+        "name": "海底捞",
+        "image": "../images/list1.jpg",
+        "mag": "全家桶,1可乐+成都+限价你+监控",
+        "price": 31,
+        "retailp": 60,
+        "maichu": 2314
+    },
+    {
+        "name": "海底捞",
+        "image": "../images/list2.jpg",
+        "mag": "全家桶,1可乐+成都+限价你+监控",
+        "price": 31,
+        "retailp": 60,
+        "maichu": 2314
+    },
+    {
+        "name": "海底捞",
+        "image": "../images/list3.jpg",
+        "mag": "全家桶,1可乐+成都+限价你+监控",
+        "price": 31,
+        "retailp": 60,
+        "maichu": 2314
+    },
+    {
+        "name": "海底捞",
+        "image": "../images/list4.jpg",
+        "mag": "全家桶,1可乐+成都+限价你+监控",
+        "price": 31,
+        "retailp": 60,
+        "maichu": 2314
+    },
+    {
+        "name": "海底捞",
+        "image": "../images/list1.jpg",
+        "mag": "全家桶,1可乐+成都+限价你+监控",
+        "price": 31,
+        "retailp": 60,
+        "maichu": 2314
+    }
+
+]
