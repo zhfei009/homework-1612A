@@ -1,0 +1,26 @@
+{
+    "name": "main",
+    "version": "1.0.0",
+    "main": "gulpfile.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "gulp dev",
+        "builds": "gulp builds"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "gulp": "^4.0.0",
+        "babel-core": "^6.26.3",
+        "gulp-clean-css": "^4.0.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-htmlmin": "^5.0.1",
+        "gulp-sass": "^4.0.2",
+        "gulp-uglify": "^3.0.2",
+        "gulp-webserver": "^0.9.1",
+        "gulp-babel": "7.0.0"
+    },
+    "dependencies": {},
+    "description": ""
+}
