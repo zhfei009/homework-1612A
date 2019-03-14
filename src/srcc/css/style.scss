@@ -1,0 +1,167 @@
+@import 'common.scss';
+@import '_minix.scss';
+@function qw($px) {
+    @return $px / 37.5px * 1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .head {
+        width: 100%;
+        height: qw(50px);
+        background: #00C3B1;
+        color: #fff;
+        display: flex;
+        div {
+            width: 15%;
+            height: 100%;
+            h1 {
+                width: 100%;
+                text-align: center;
+                line-height: qw(50px);
+                font-size: qw(16px);
+            }
+        }
+        .div1 {
+            width: 70%;
+            height: 100%;
+            text-align: center;
+            input {
+                width: qw(205px);
+                height: qw(30px);
+                background: #00A697;
+                margin: qw(10px) auto;
+                padding-left: qw(40px);
+                color: #fff;
+            }
+        }
+        .div2 {
+            dl {
+                width: 100%;
+                height: 100%;
+                dt {
+                    width: qw(28px);
+                    height: qw(28px);
+                    margin: 0 auto;
+                    margin-top: qw(5px);
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                dd {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .cont {
+        flex: 1;
+        overflow: hidden;
+        .swiper-container {
+            width: 100%;
+            height: qw(90px);
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .nav {
+            width: 100%;
+            height: qw(160px);
+            display: flex;
+            flex-wrap: wrap;
+            dl {
+                width: 20%;
+                height: qw(80px);
+                text-align: center;
+                padding-top: qw(10px);
+                dt {
+                    width: qw(40px);
+                    height: qw(40px);
+                    margin: 0 auto;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                dd {
+                    width: 100%;
+                    height: qw(30px);
+                    line-height: qw(30px);
+                }
+            }
+        }
+        .conter {
+            width: 100%;
+            p {
+                width: 100%;
+                height: qw(80px);
+                text-align: center;
+                border-top: qw(20px) solid #ccc;
+                line-height: qw(60px);
+                font-size: qw(20px);
+            }
+            dl {
+                width: 100%;
+                height: qw(100px);
+                display: flex;
+                dt {
+                    width: 30%;
+                    height: qw(100px);
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                dd {
+                    width: 70%;
+                    height: qw(100px);
+                    h1 {
+                        width: 100%;
+                        height: qw(25px);
+                        line-height: qw(25px);
+                        font-size: qw(16px);
+                        text-align: center;
+                    }
+                    p {
+                        width: 100%;
+                        height: qw(20px);
+                        line-height: qw(20px);
+                        border: 0;
+                        font-size: qw(12px);
+                        font-size: qw(16px);
+                        border-top: 0;
+                    }
+                    div {
+                        width: 100%;
+                        height: qw(30px);
+                        line-height: qw(30px);
+                        font-size: qw(16px);
+                        text-align: center;
+                        margin-top: qw(20px);
+                        span {
+                            color: #00A697;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .foot {
+        width: 100%;
+        height: qw(50px);
+        background: #eee;
+    }
+}
