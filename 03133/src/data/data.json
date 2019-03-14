@@ -1,0 +1,33 @@
+[{
+    "name": "华莱士",
+    "img": "./images/c1.png",
+    "money": 13
+}, {
+    "name": "猪来了",
+    "img": "./images/c2.png",
+    "money": 96
+}, {
+    "name": "杀菌灯",
+    "img": "./images/c3.png",
+    "money": 28
+}, {
+    "name": "卡萨经济",
+    "img": "./images/c4.png",
+    "money": 17
+}, {
+    "name": "啥的痕迹",
+    "img": "./images/c5.png",
+    "money": 85
+}, {
+    "name": "阿萨德",
+    "img": "./images/c6.png",
+    "money": 15
+}, {
+    "name": "流量计",
+    "img": "./images/c7.png",
+    "money": 65
+}, {
+    "name": "傻傻的",
+    "img": "./images/c8.png",
+    "money": 32
+}]

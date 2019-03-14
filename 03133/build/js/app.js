@@ -1,0 +1,1 @@
+"use strict";var bscroll=new BScroll(".main",{probeType:2,click:!0});

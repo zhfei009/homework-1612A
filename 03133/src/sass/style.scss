@@ -1,0 +1,166 @@
+@import "_minix.scss";
+@import "common.scss";
+.wrap {
+    width: 100%;
+    height: 100%;
+    // background: #eee;
+    display: flex;
+    flex-direction: column;
+    .header {
+        width: 100%;
+        height: rem(58px);
+        background: #00c3b1;
+        display: flex;
+        justify-content: space-between;
+        .zuo {
+            width: rem(76px);
+            height: rem(58px);
+            line-height: rem(58px);
+            text-align: center;
+            span {
+                font-size: rem(20px);
+                color: #fff;
+            }
+            i {
+                font-size: rem(14px);
+                color: #fff;
+            }
+        }
+        .inp {
+            margin: rem(10px) 0;
+            width: rem(235px);
+            height: rem(35px);
+            background: #00a697;
+            border-radius: rem(5px);
+        }
+        .you {
+            width: rem(54px);
+            p {
+                margin-top: rem(10px);
+                width: 100%;
+                text-align: center;
+                i {
+                    font-size: rem(20px);
+                    color: #fff;
+                }
+            }
+            div {
+                text-align: center;
+                color: #fff;
+            }
+        }
+    }
+    .main {
+        flex: 1;
+        width: 100%;
+        overflow-y: scroll;
+        .banner {
+            width: 100%;
+            height: rem(108px);
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .baner {
+            margin-bottom: rem(10px);
+            width: 100%;
+            // height: rem(205px);
+            .wrapper {
+                width: 100%;
+                // height: 100%;
+                .slide {
+                    width: 100%;
+                    // height: 100%;
+                    display: flex;
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+                    a {
+                        margin: rem(5px) 0;
+                        width: 20%;
+                        div {
+                            margin: 0 auto;
+                            width: rem(48px);
+                            height: rem(48px);
+                            border-radius: 50%;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        p {
+                            width: 100%;
+                            height: rem(32px);
+                            line-height: rem(32px);
+                            text-align: center;
+                            font-size: rem(14px);
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+        .nei {
+            width: 100%;
+            .biao {
+                width: 100%;
+                height: rem(46px);
+                line-height: rem(46px);
+                span {
+                    margin-left: rem(10px);
+                    font-size: rem(20px);
+                }
+            }
+            .box {
+                width: 100%;
+                dl {
+                    margin-top: rem(10px);
+                    padding: 0 rem(10px);
+                    display: flex;
+                    justify-content: space-between;
+                    dt {
+                        width: rem(95px);
+                        height: rem(95px);
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    dd {
+                        width: rem(250px);
+                        height: rem(95px);
+                        h6 {
+                            width: 100%;
+                            height: rem(30px);
+                            line-height: rem(30px);
+                            font-size: rem(18px);
+                            color: #666;
+                        }
+                        p {
+                            width: 100%;
+                            height: rem(20px);
+                            line-height: rem(20px);
+                            font-size: rem(16px);
+                            color: #666;
+                        }
+                        div {
+                            margin-top: rem(20px);
+                            width: 100%;
+                            height: rem(20px);
+                            line-height: rem(20px);
+                            display: flex;
+                            h5 {
+                                font-size: rem(20px);
+                                color: #00a697;
+                            }
+                            p {
+                                font-size: rem(16px);
+                                color: #666;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
