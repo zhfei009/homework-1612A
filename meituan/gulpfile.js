@@ -10,7 +10,7 @@ var babel = require('gulp-babel');
 var uglify = require('gulp-uglify');
 var htmlmin = require('gulp-htmlmin');
 var imagemin = require('gulp-imagemin');
-
+var listdata = require('./src/data/list.json');
 //编译sass
 gulp.task('sass', function() {
     return gulp.src('./src/scss/*.scss')
@@ -32,7 +32,7 @@ gulp.task('server', function() {
                 } else {
                     pathname = pathname == '/' ? 'index.html' : pathname;
                     if (pathname == '/list') {
-                        res.end(JSON.stringify({ code: 0, data: result }))
+                        res.end(JSON.stringify({ code: 0, data: result, listdata: listdata }))
                     } else {
                         res.end(fs.readFileSync(path.join(__dirname, 'src', pathname)))
                     }

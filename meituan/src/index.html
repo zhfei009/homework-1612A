@@ -35,8 +35,8 @@
                     <img src="./images/3.png" alt="">
                 </div>
                 <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
+                    <div class="swiper-wrapper" id="wrapper">
+                        <!-- <div class="swiper-slide">
                             <div class="list">
                                 <dl>
                                     <dt></dt>
@@ -112,7 +112,7 @@
                                 </dl>
 
                             </div>
-                        </div>
+                        </div> -->
 
                     </div>
                     <div class="swiper-pagination"></div>
@@ -176,18 +176,6 @@
     <script src="./js/swiper.min.js"></script>
     <script src="./js/better-scroll.js"></script>
     <script>
-        //轮播图
-        new Swiper(".swiper-container", {
-            autoplay: {
-                delay: 1000
-            },
-            loop: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true
-            }
-        })
-
         //scroll事件
         new BScroll('main')
 
@@ -196,14 +184,47 @@
         xml.onreadystatechange = function() {
             if (xml.readyState == 4 && xml.status == 200) {
                 var data = JSON.parse(xml.responseText)
-                    // console.log(data)
+                renderlist(data.listdata)
                 render(data.data)
 
             }
         }
         xml.send()
 
+
         //渲染数据
+        function renderlist(data) {
+            var len = Math.ceil(data.length / 10);
+            // console.log(len)
+            var html = '';
+            for (var i = 1; i <= len; i++) {
+                var start = (i - 1) * 10;
+                var end = start + 10;
+                var str = data.slice(start, end);
+                var listhtml = ''
+                str.forEach(function(val) {
+                    listhtml += ` <dl>
+                                    <dt></dt>
+                                    <dd>${val.title}</dd>
+                                </dl>`
+                })
+                html += ` <div class="swiper-slide">
+                            <div class="list">${listhtml}</div></div>`
+            }
+            document.querySelector('#wrapper').innerHTML = html;
+            //轮播图
+            new Swiper(".swiper-container", {
+                autoplay: {
+                    delay: 1000
+                },
+                loop: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true
+                }
+            })
+        }
+
         function render(data) {
             var html = '';
             data.forEach(function(val) {
