@@ -1,0 +1,27 @@
+{
+    "name": "yule",
+    "version": "1.0.0",
+    "description": "美团页面练习文件",
+    "main": "gulpfile.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "gulp dev",
+        "build": "gulp build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lxx929/yule.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/lxx929/yule/issues"
+    },
+    "homepage": "https://github.com/lxx929/yule#readme",
+    "devDependencies": {
+        "babel-preset-es2015": "*",
+        "gulp-babel": "^7.0.0",
+        "babel-core": "*"
+    }
+}

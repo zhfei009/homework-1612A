@@ -1,0 +1,214 @@
+    @import "common.scss";
+    @import "_minix.scss";
+    html,
+    body,
+    .wrapper {
+        width: 100%;
+        height: 100%;
+        color: #333;
+        -webkit-font-smoothing: antialiased;
+        font-family: "Microsoft YaHei" !important;
+    }
+    
+    .wrapper {
+        @include box_flex;
+        @include direction(column);
+    }
+    
+    header {
+        width: 100%;
+        height: pxTorem(50px);
+        @include box_flex;
+        @include align;
+        @include justify(space-between);
+        padding: 0 pxTorem(10px);
+        @include sizing;
+        color: #fff;
+        background: #06c1ae;
+        div {
+            @include box_flex;
+            @include justify(space-between);
+            @include align;
+        }
+        div.address {
+            font-size: pxTorem(17px);
+            i.icon {
+                margin-left: pxTorem(10px);
+                font-size: pxTorem(14px);
+            }
+        }
+        div.search {
+            @include flex;
+            height: 64%;
+            margin: 0 pxTorem(10px);
+            background: #05a494;
+            border-radius: pxTorem(4px);
+            i.icon {
+                margin: pxTorem(10px);
+                font-size: pxTorem(15px);
+            }
+            input {
+                height: 100%;
+                @include flex;
+            }
+            input::-webkit-input-placeholder {
+                color: #68dbce;
+                font-size: pxTorem(14px);
+            }
+        }
+        div.my {
+            @include direction(column);
+            i.icon {
+                margin: 0 pxTorem(10px);
+                font-size: pxTorem(22px);
+            }
+        }
+    }
+    
+    section {
+        width: 100%;
+        @include flex;
+        overflow: hidden;
+        .content {
+            .banner {
+                position: relative;
+            }
+            .swiper-pagination-bullet {
+                width: pxTorem(8px);
+                height: pxTorem(8px);
+                background: #06c1ae;
+            }
+            .swiper-container-horizontal>.swiper-pagination-bullets,
+            .swiper-pagination-custom,
+            .swiper-pagination-fraction {
+                bottom: pxTorem(23px) !important;
+            }
+            .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+                margin: 0 pxTorem(10px);
+            }
+            .swiper-slide {
+                border-bottom: pxTorem(1px) solid rgb(228, 225, 225);
+                >img {
+                    border-radius: 2%;
+                    width: 100%;
+                }
+            }
+            .swiper_slide {
+                border-bottom: pxTorem(12px) solid #eee;
+            }
+            .btn {
+                width: 100%;
+                position: absolute;
+                bottom: pxTorem(14px);
+                z-index: 2;
+                text-align: center;
+                button {
+                    padding: pxTorem(8px) pxTorem(20px);
+                    border-radius: pxTorem(20px);
+                    font-size: pxTorem(14px);
+                    outline: 0;
+                    border: pxTorem(1px) solid #06c1ae;
+                }
+                button:active {
+                    background: #06c1ae;
+                    color: #fff;
+                }
+                .open {
+                    background: #06c1ae;
+                    color: #fff;
+                }
+                .download {
+                    background: #fff;
+                    color: #06c1ae;
+                }
+            }
+            .list {
+                width: 100%;
+                ul {
+                    margin: pxTorem(15px) 0;
+                    @include flex;
+                    @include box_flex;
+                    @include align;
+                    @include justify(space-between);
+                    @include flexWrap;
+                    li {
+                        width: 20%;
+                        a {
+                            margin: pxTorem(5px) 0;
+                            color: #000 !important;
+                            @include box_flex;
+                            @include align;
+                            @include direction(column);
+                            >img {
+                                width: 52%;
+                                border-radius: 50%;
+                            }
+                            i.icon {
+                                font-size: pxTorem(20px);
+                            }
+                            span {
+                                line-height: pxTorem(30px);
+                            }
+                        }
+                    }
+                }
+            }
+            .cont {
+                width: 100%;
+                @include flex;
+                margin-left: pxTorem(10px);
+                box-sizing: border-box;
+                >p {
+                    height: pxTorem(40px);
+                    line-height: pxTorem(40px);
+                    font-size: pxTorem(15px);
+                    border-bottom: pxTorem(1px) solid rgb(228, 225, 225);
+                }
+                dl {
+                    border-bottom: pxTorem(1px) solid rgb(228, 225, 225);
+                    @include box_flex;
+                    @include align;
+                    width: 100%;
+                    dt {
+                        width: 25%;
+                        margin: pxTorem(10px) 0;
+                        img {
+                            width: 100%;
+                            height: pxTorem(85px);
+                        }
+                    }
+                    dd {
+                        width: 72%;
+                        height: pxTorem(85px);
+                        padding: 0 pxTorem(10px);
+                        @include sizing;
+                        @include box_flex;
+                        @include justify(space-between);
+                        @include direction(column);
+                        h4 {
+                            font-size: pxTorem(17px);
+                        }
+                        >p {
+                            width: 100%;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            margin-bottom: pxTorem(12px);
+                        }
+                        .jia {
+                            @include box_flex;
+                            @include justify(space-between);
+                            p {
+                                time {
+                                    color: #06c1ae;
+                                    b {
+                                        font-size: pxTorem(17px);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }

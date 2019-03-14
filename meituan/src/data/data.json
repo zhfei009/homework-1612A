@@ -1,0 +1,31 @@
+[{
+        "img": "img3.jpg",
+        "title": "华莱士",
+        "content": "[15号店通用] 鸡腿堡+薯条+中杯可乐1份",
+        "newPrice": "13",
+        "oldPrice": "31",
+        "sold": "4321"
+    }, {
+        "img": "img2.jpg",
+        "title": "吉野家",
+        "content": "[512号店通用] 卤肉饭+中杯汽水/紫菜蛋花汤1份",
+        "newPrice": "42",
+        "oldPrice": "62",
+        "sold": "4464"
+    }, {
+        "img": "img1.jpg",
+        "title": "德克士",
+        "content": "[61号店通用] 鸡腿堡+薯条+中杯可乐1份",
+        "newPrice": "24",
+        "oldPrice": "51",
+        "sold": "9321"
+    },
+    {
+        "img": "img2.jpg",
+        "title": "吉野家",
+        "content": "[512号店通用] 卤肉饭+中杯汽水/紫菜蛋花汤1份",
+        "newPrice": "42",
+        "oldPrice": "62",
+        "sold": "4464"
+    }
+]

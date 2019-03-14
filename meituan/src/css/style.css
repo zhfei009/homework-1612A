@@ -1,0 +1,387 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  font-family: STHeitiSC-Light;
+  font: inherit;
+  vertical-align: baseline; }
+
+html,
+body,
+form,
+fieldset,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-text-size-adjust: none; }
+
+html,
+body {
+  width: 100%;
+  height: 100%; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  font-family: arial, sans-serif; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+ins,
+a {
+  text-decoration: none; }
+
+del {
+  text-decoration: line-through; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  display: inline-block; }
+
+input,
+textarea {
+  border: none;
+  background: none;
+  outline: none;
+  -webkit-appearance: none; }
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  -ms-tap-highlight-color: rgba(0, 0, 0, 0);
+  -o-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+/*html {
+    font-size: $browser-default-font-size;
+}*/
+html {
+  font-size: 37.5px; }
+
+html,
+body,
+.wrapper {
+  width: 100%;
+  height: 100%;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Microsoft YaHei" !important; }
+
+.wrapper {
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-flex-direction: column;
+  flex-direction: column; }
+
+header {
+  width: 100%;
+  height: 1.33333rem;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 0 0.26667rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff;
+  background: #06c1ae; }
+  header div {
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    align-items: center; }
+  header div.address {
+    font-size: 0.45333rem; }
+    header div.address i.icon {
+      margin-left: 0.26667rem;
+      font-size: 0.37333rem; }
+  header div.search {
+    -webkit-flex: 1 1 0%;
+    flex: 1 1 0%;
+    height: 64%;
+    margin: 0 0.26667rem;
+    background: #05a494;
+    border-radius: 0.10667rem; }
+    header div.search i.icon {
+      margin: 0.26667rem;
+      font-size: 0.4rem; }
+    header div.search input {
+      height: 100%;
+      -webkit-flex: 1 1 0%;
+      flex: 1 1 0%; }
+    header div.search input::-webkit-input-placeholder {
+      color: #68dbce;
+      font-size: 0.37333rem; }
+  header div.my {
+    -webkit-flex-direction: column;
+    flex-direction: column; }
+    header div.my i.icon {
+      margin: 0 0.26667rem;
+      font-size: 0.58667rem; }
+
+section {
+  width: 100%;
+  -webkit-flex: 1 1 0%;
+  flex: 1 1 0%;
+  overflow: hidden; }
+  section .content .banner {
+    position: relative; }
+  section .content .swiper-pagination-bullet {
+    width: 0.21333rem;
+    height: 0.21333rem;
+    background: #06c1ae; }
+  section .content .swiper-container-horizontal > .swiper-pagination-bullets,
+  section .content .swiper-pagination-custom,
+  section .content .swiper-pagination-fraction {
+    bottom: 0.61333rem !important; }
+  section .content .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 0.26667rem; }
+  section .content .swiper-slide {
+    border-bottom: 0.02667rem solid #e4e1e1; }
+    section .content .swiper-slide > img {
+      border-radius: 2%;
+      width: 100%; }
+  section .content .swiper_slide {
+    border-bottom: 0.32rem solid #eee; }
+  section .content .btn {
+    width: 100%;
+    position: absolute;
+    bottom: 0.37333rem;
+    z-index: 2;
+    text-align: center; }
+    section .content .btn button {
+      padding: 0.21333rem 0.53333rem;
+      border-radius: 0.53333rem;
+      font-size: 0.37333rem;
+      outline: 0;
+      border: 0.02667rem solid #06c1ae; }
+    section .content .btn button:active {
+      background: #06c1ae;
+      color: #fff; }
+    section .content .btn .open {
+      background: #06c1ae;
+      color: #fff; }
+    section .content .btn .download {
+      background: #fff;
+      color: #06c1ae; }
+  section .content .list {
+    width: 100%; }
+    section .content .list ul {
+      margin: 0.4rem 0;
+      -webkit-flex: 1 1 0%;
+      flex: 1 1 0%;
+      display: flex;
+      /* NEW, Spec - Opera 12.1, Firefox 20+ */
+      display: -webkit-flex;
+      /* NEW - Chrome */
+      -webkit-align-items: center;
+      align-items: center;
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      section .content .list ul li {
+        width: 20%; }
+        section .content .list ul li a {
+          margin: 0.13333rem 0;
+          color: #000 !important;
+          display: flex;
+          /* NEW, Spec - Opera 12.1, Firefox 20+ */
+          display: -webkit-flex;
+          /* NEW - Chrome */
+          -webkit-align-items: center;
+          align-items: center;
+          -webkit-flex-direction: column;
+          flex-direction: column; }
+          section .content .list ul li a > img {
+            width: 52%;
+            border-radius: 50%; }
+          section .content .list ul li a i.icon {
+            font-size: 0.53333rem; }
+          section .content .list ul li a span {
+            line-height: 0.8rem; }
+  section .content .cont {
+    width: 100%;
+    -webkit-flex: 1 1 0%;
+    flex: 1 1 0%;
+    margin-left: 0.26667rem;
+    box-sizing: border-box; }
+    section .content .cont > p {
+      height: 1.06667rem;
+      line-height: 1.06667rem;
+      font-size: 0.4rem;
+      border-bottom: 0.02667rem solid #e4e1e1; }
+    section .content .cont dl {
+      border-bottom: 0.02667rem solid #e4e1e1;
+      display: flex;
+      /* NEW, Spec - Opera 12.1, Firefox 20+ */
+      display: -webkit-flex;
+      /* NEW - Chrome */
+      -webkit-align-items: center;
+      align-items: center;
+      width: 100%; }
+      section .content .cont dl dt {
+        width: 25%;
+        margin: 0.26667rem 0; }
+        section .content .cont dl dt img {
+          width: 100%;
+          height: 2.26667rem; }
+      section .content .cont dl dd {
+        width: 72%;
+        height: 2.26667rem;
+        padding: 0 0.26667rem;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        box-sizing: border-box;
+        display: flex;
+        /* NEW, Spec - Opera 12.1, Firefox 20+ */
+        display: -webkit-flex;
+        /* NEW - Chrome */
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+        -webkit-flex-direction: column;
+        flex-direction: column; }
+        section .content .cont dl dd h4 {
+          font-size: 0.45333rem; }
+        section .content .cont dl dd > p {
+          width: 100%;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          margin-bottom: 0.32rem; }
+        section .content .cont dl dd .jia {
+          display: flex;
+          /* NEW, Spec - Opera 12.1, Firefox 20+ */
+          display: -webkit-flex;
+          /* NEW - Chrome */
+          -webkit-justify-content: space-between;
+          justify-content: space-between; }
+          section .content .cont dl dd .jia p time {
+            color: #06c1ae; }
+            section .content .cont dl dd .jia p time b {
+              font-size: 0.45333rem; }
