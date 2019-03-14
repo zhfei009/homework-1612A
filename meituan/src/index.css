@@ -1,0 +1,287 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  font-family: STHeitiSC-Light;
+  font: inherit;
+  vertical-align: baseline; }
+
+html,
+body,
+form,
+fieldset,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-text-size-adjust: none; }
+
+html,
+body {
+  width: 100%;
+  height: 100%; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  font-family: arial, sans-serif; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+ins,
+a {
+  text-decoration: none; }
+
+del {
+  text-decoration: line-through; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  display: inline-block; }
+
+input,
+textarea {
+  border: none;
+  background: none;
+  outline: none;
+  -webkit-appearance: none; }
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  -ms-tap-highlight-color: rgba(0, 0, 0, 0);
+  -o-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+/*html {
+    font-size: $browser-default-font-size;
+}*/
+html {
+  font-size: 37.5px; }
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; }
+  .wrapper header {
+    width: 100%;
+    height: 1.17333rem;
+    background: #00C3B1;
+    display: flex;
+    color: #fff;
+    z-index: 999; }
+    .wrapper header div:nth-child(1) {
+      width: 15%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .wrapper header div:nth-child(1) > span {
+        font-size: 0.42667rem;
+        margin-right: 0.13333rem; }
+    .wrapper header div:nth-child(2) {
+      width: 70%;
+      background: #00A697;
+      height: 0.8rem;
+      margin-top: 0.13333rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .wrapper header div:nth-child(2) i {
+        width: 10%;
+        font-size: 0.4rem;
+        padding-left: 0.26667rem;
+        box-sizing: border-box; }
+      .wrapper header div:nth-child(2) input {
+        width: 90%;
+        color: #00D1C4;
+        padding-left: 0.13333rem;
+        box-sizing: border-box; }
+    .wrapper header div:nth-child(3) {
+      width: 15%; }
+      .wrapper header div:nth-child(3) dl {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .wrapper header div:nth-child(3) dl dt {
+          margin-top: 0.13333rem; }
+          .wrapper header div:nth-child(3) dl dt i {
+            font-size: 0.48rem; }
+  .wrapper section {
+    flex: 1; }
+    .wrapper section div {
+      width: 100%; }
+      .wrapper section div .bgImg {
+        width: 100%; }
+      .wrapper section div .swiper-container {
+        width: 100%; }
+        .wrapper section div .swiper-container .swiper-wrapper {
+          width: 100%; }
+          .wrapper section div .swiper-container .swiper-wrapper .swiper-slide {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap; }
+            .wrapper section div .swiper-container .swiper-wrapper .swiper-slide dl {
+              width: 20%;
+              display: flex;
+              flex-direction: column;
+              flex-shrink: 0;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-bottom: 0.26667rem; }
+              .wrapper section div .swiper-container .swiper-wrapper .swiper-slide dl dt img {
+                width: 1.33333rem;
+                height: 1.33333rem; }
+      .wrapper section div .content {
+        width: 100%; }
+        .wrapper section div .content h2 {
+          width: 100%;
+          height: 0.93333rem;
+          font-size: 0.48rem;
+          display: flex;
+          align-items: center;
+          margin-left: 0.4rem; }
+        .wrapper section div .content dl {
+          width: 100%;
+          height: 2.4rem;
+          display: flex;
+          border-bottom: 1px solid #ccc;
+          padding-left: 0.13333rem;
+          box-sizing: border-box; }
+          .wrapper section div .content dl dt {
+            width: 30%; }
+            .wrapper section div .content dl dt img {
+              width: 2.13333rem;
+              height: 2.13333rem;
+              margin-left: 0.26667rem; }
+          .wrapper section div .content dl dd {
+            width: 70%; }
+            .wrapper section div .content dl dd p:nth-child(1) {
+              font-size: 0.42667rem;
+              margin-bottom: 0.13333rem; }
+            .wrapper section div .content dl dd p:nth-child(2) {
+              font-size: 0.37333rem;
+              color: #6B6B6B;
+              margin-bottom: 0.4rem; }
+            .wrapper section div .content dl dd p:nth-child(3) {
+              font-size: 0.37333rem; }
+              .wrapper section div .content dl dd p:nth-child(3) .price {
+                color: #23CBBC;
+                font-size: 0.53333rem; }
+              .wrapper section div .content dl dd p:nth-child(3) .sale {
+                float: right;
+                color: #6B6B6B;
+                margin-right: 0.4rem; }
