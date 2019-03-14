@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-sass": "*",
+    "gulp-webserver": "*",
+		"gulp-clean-css": "*"
+  }
+}

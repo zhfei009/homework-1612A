@@ -1,0 +1,211 @@
+@import "./libs/_minix.scss";
+@import "./libs/common.scss";
+*{
+	margin: 0;
+	padding: 0;
+	list-style:none;
+	text-decoration: none;
+	user-select: none;
+}
+.wrap{
+	width: 100%;
+	height: 100%;
+	@include box_flex;
+	@include direction(column);
+	header{
+		width: 100%;
+		height: pxTorem(50px);
+		padding: 0 pxTorem(10px);
+		background: #00c3b1;
+		@include box_flex;
+		@include align;
+		@include justify(space-between);
+		.hleft{
+			@include box_flex;
+			@include align;
+			@include justify(space-between);
+			padding: 0 pxTorem(10px);
+			padding-left: 0;
+			i,h3{
+				margin: pxTorem(2px);
+				font-size:pxTorem(14px);
+				font-weight: bold;
+				color: #fff;
+			}
+		}
+		.input{
+			@include flex;
+			@include box_flex;
+			@include align;
+			@include justify(space-between);
+			background: #2e978e;
+			padding: 0 pxTorem(10px);
+			height: 70%;
+			border-radius: pxTorem(4px);
+			i{
+				font-size:pxTorem(14px);
+				font-weight: bold;
+				color: #fff;
+			}
+			input{
+				margin: 0;
+				padding: 0;
+				background: 0;
+				border:0;
+				text-indent: pxTorem(10px);
+				color:#1dddcc;
+			}
+		}
+		.hright{
+			@include box_flex;
+			@include align;
+			@include justify(space-between);
+			@include direction(column);
+			color: #fff;
+			padding: 0 pxTorem(10px);
+			i{
+				font-size:pxTorem(20px);
+				font-weight: bold;
+				color: #fff;
+			}
+			.text{
+				font-size:pxTorem(10px);
+			}
+		}
+	}
+	section{
+		width: 100%;
+		@include flex;
+		@include box_flex;
+		@include direction(column);
+		overflow-y:auto;
+		.banner{
+			width: 100%;
+			height: pxTorem(130px);
+			border:pxTorem(1px) solid #6666;
+			.banner-b{
+				width: 100%;
+				.banner-d{
+					width: 100%;
+					img{
+						width: 100%;
+						height: 100%;
+					}
+				}
+			}
+		}
+		.main{
+			width: 100%;
+			height: pxTorem(180px);
+			background: #fff;
+			padding-bottom: pxTorem(10px);
+			position: relative;
+			margin-bottom: pxTorem(20px);
+			.slideTo{
+				width: pxTorem(30px);
+				@include box_flex;
+				@include justify(space-around);
+				position:absolute;
+				bottom: 20px;
+				left: 45%;
+				z-index: 1;
+				>b{
+					height: pxTorem(10px);
+					width: pxTorem(10px);
+					border-radius: 50%;
+					border: pxTorem(1px) solid #666666;
+					background: #000;
+				}
+			}
+			.main-b{
+				width: 100%;
+				.main-d{
+					width: 100%;
+					height: 100%;
+					@include box_flex;
+					@include flexWrap(wrap);
+					dl{
+						width: calc(100%/5);
+						@include box_flex;
+						@include justify;
+						@include align;
+						@include direction(column);
+						dt{
+							width: 100%;
+							@include box_flex;
+							@include justify;
+							img{
+								width: pxTorem(40px);
+								height: pxTorem(40px);
+							}
+						}
+						dd{
+							width: 100%;
+							@include box_flex;
+							@include justify;
+							font-size:pxTorem(15px);
+							color:#666666;
+							padding: pxTorem(5px) 0;
+						}
+					}
+				}
+			}
+		}
+		.content{
+			@include box_flex;
+			@include direction(column);
+			background: #fff;
+			width:100%;
+			padding-left:pxTorem(10px);
+			.title{
+				width:100%;
+				padding:pxTorem(10px) pxTorem(5px);
+				@include flex_shrink(0);
+				h2{
+					font-size:pxTorem(25px);
+				}
+			}
+			.slide{
+				width:100%;
+				@include box_flex;
+				@include flex_shrink(0);
+				padding: pxTorem(15px) pxTorem(5px);
+				.sleft{
+					width: 200px;
+					height: 200px;
+					img{
+						width:100%;
+						height:100%;
+					}
+				}
+				
+				.sright{
+					@include flex;
+					height: 100%;
+					@include box_flex;
+					@include direction(column);
+					padding: 0 pxTorem(10px);
+					h4{
+						font-size:pxTorem(20px);
+						padding: pxTorem(1px) 0;
+					}
+					p{
+						@include box_flex;
+						@include justify(space-between);
+						@include align;
+						font-size:pxTorem(15px);
+						padding: pxTorem(4px) 0;
+						&:nth-child(3){
+							padding-top: pxTorem(15px);
+						}
+						strong{
+							color: #00c3b1;
+							font-weight: bold;
+							font-size:pxTorem(20px);
+						}
+					}
+				}
+			}
+		}
+	}
+}
