@@ -1,0 +1,31 @@
+[{
+    "icon": "icon-gouwuche",
+    "iname": "购物车"
+}, {
+    "icon": "icon-shouye",
+    "iname": "首页"
+}, {
+    "icon": "icon-wode",
+    "iname": "我的"
+}, {
+    "icon": "icon-share6",
+    "iname": "分享"
+}, {
+    "icon": "icon-set",
+    "iname": "设置"
+}, {
+    "icon": "icon-25",
+    "iname": "微信"
+}, {
+    "icon": "icon-26",
+    "iname": "朋友圈"
+}, {
+    "icon": "icon-27",
+    "iname": "微博"
+}, {
+    "icon": "icon-28",
+    "iname": "空间"
+}, {
+    "icon": "icon-29",
+    "iname": "QQ"
+}]
