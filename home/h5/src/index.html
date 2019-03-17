@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <ul class="nav">
+            <li>推荐</li>
+            <li>北京</li>
+        </ul>
+        <div class="big">
+            <!-- <img src="img/1.jpg" alt="">
+            <div class="foot">
+                <h5 class="tit">大多数人大多数人</h5>
+                <div class="content">大多数人大多数人大多数人大多数人大多数人大多数人大多数人111111111111111</div>
+
+            </div> -->
+        </div>
+        <ul class="bottom">
+            <li>首页</li>
+            <li>首页</li>
+            <li>首页</li>
+            <li>首页</li>
+            <li>首页</li>
+        </ul>
+    </div>
+    <script src="js/flexible.js"></script>
+    <script src="js/axios.js"></script>
+    <script>
+        const big = document.querySelector('.big');
+        let html = '';
+        // //标题 查询
+        axios.get('/getData').then(res => {
+            var page = 1;
+            pageSize = 1;
+            total = 0;
+            res.data.data.map(function(item) {
+                html += ` <img src="img/${item.img}" alt="">
+            <div class="foot">
+                <h5 class="tit">${item.tit}</h5>
+                <div class="content">${item.content}</div>
+            </div>`
+            })
+            big.innerHTML += html;
+        })
+    </script>
+</body>
+
+</html>
