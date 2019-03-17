@@ -1,0 +1,55 @@
+@import "common.scss";
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    .main {
+        width: 100%;
+        height: 100%;
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            .swiper-wrapper {
+                width: 100%;
+                height: 100%;
+                .swiper-slide {
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    img {
+                        width: 100%;
+                        height: px2rem(200px);
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -70%);
+                    }
+                    .div {
+                        width: 100%;
+                        text-align: center;
+                        height: px2rem(100px);
+                        line-height: px2rem(100px);
+                        font-size: px2rem(4px);
+                        position: absolute;
+                        left: 50%;
+                        top: 80%;
+                        transform: translate(-50%, 30%);
+                        overflow: hidden;
+                    }
+                }
+            }
+            .swiper-pagination {
+                span {
+                    background: #000;
+                }
+            }
+        }
+    }
+}
