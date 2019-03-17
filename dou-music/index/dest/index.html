@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <header class="header">
+            头部
+        </header>
+        <section class="main">
+            评论
+        </section>
+        <footer class="footer">
+            尾部
+        </footer>
+    </div>
+    <script src="scripts/flexible.js"></script>
+    <script src="scripts/axios.js"></script>
+    <script>
+        const main=document.querySelector('.main');
+    axios.get('/api/list').then((response)=>{
+       const data = response.data.data;
+       let str = '';
+       data.forEach(item=>{
+          str += `
+            <p>${item.address}${item.age}${item.card}${item.name}</p>
+          `
+          main.innerHTML=str;
+       })
+    })
+    
+    
+    </script>
+</body>
+</html>
