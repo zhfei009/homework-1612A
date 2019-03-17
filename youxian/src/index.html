@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/swiper-4.1.6.min.css">
+    <script src="./js/swiper-4.1.6.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <span>次日到达</span>
+            <span>北京少年豪杰功夫馆(颐和校区)</span>
+            <span><i class="iconfont "></i></span>
+        </header>
+        <section>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide content"></div>
+                    <div class="swiper-slide"></div>
+                </div>
+            </div>
+        </section>
+        <footer>
+        </footer>
+    </div>
+</body>
+<script>
+    let xhr = new XMLHttpRequest();
+    xhr.open('POST', '/api/list', true);
+    xhr.onload = () => {
+        if ((xhr.status >= 200 && xhr.status < 300) || xhr.status === 304) {
+            console.log(JSON.parse(xhr.responseText));
+            var data = JSON.parse(xhr.responseText);
+            if (data.code == 1) {
+                var html = '';
+                data.data.forEach((v, i) => {
+                    html += ` <dl>
+                                <dt><img src="${v.img}" alt=""></dt>
+                                <dd>${v.name}</dd>
+                            </dl>`;
+                });
+                document.querySelector('.content').innerHTML += html;
+            }
+        }
+    }
+    xhr.send();
+    var mySwiper = new Swiper('.swiper-container', {
+        loop: true
+    });
+</script>
+
+</html>
