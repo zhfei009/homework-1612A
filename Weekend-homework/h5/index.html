@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/iconfont/iconfont.css">
+    <link rel="stylesheet" href="./src/css/swiper-4.1.6.min.css">
+</head>
+
+<body>
+    <script src="src/js/flexible.js"></script>
+    <script src="src/js/zepto.js"></script>
+    <div class="wrap">
+        <header>
+            <i class="iconfont icon-fangdajing"></i>
+            <div>
+                <p>推荐</p>
+                <p>北京</p>
+            </div>
+            <i class="iconfont icon-gengduo-01"></i>
+        </header>
+        <section>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- <div class="swiper-slide">
+                        <div class="inner" id="inner">
+                            <img src="./src/images/1.jpg" alt="">
+                        </div>
+                    </div> -->
+                    <div class="swiper-slide">2</div>
+                    <div class="swiper-slide">3</div>
+                    <div class="swiper-slide">4</div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <span>首页</span>
+            <span>关注</span>
+            <p>+</p>
+            <span>消息</span>
+            <span>我</span>
+        </footer>
+    </div>
+    <script src="./src/js/swiper.min.js"></script>
+    <script src="./src/js/libs/require.js" async defer type="text/javascript" charset="utf-8" data-main="./src/js/index.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            on: {
+                slideChange: function() {
+                    var ind = this.activeIndex;
+                    $(".footer").find("span").eq(ind).addClass("bg").siblings().removeClass("bg");
+                }
+            }
+        })
+        $(".footer").on("click", "span", function() {
+            var index = $(this).index();
+            swiper.slideTo(index);
+        })
+    </script>
+
+</body>
+
+</html>

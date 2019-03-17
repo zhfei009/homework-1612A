@@ -1,0 +1,61 @@
+@import "_minix.scss";
+@import "common.scss";
+body,
+html {
+    width: 100%;
+    height: 100%;
+    background: #e0ceb1;
+}
+
+.wrap {
+    header {
+        width: 100%;
+        height: pxTorem(44px);
+        @include box_flex;
+        @include justify(space-between);
+        @include align;
+        @include sizing;
+        padding: 0 pxTorem(15px);
+        ;
+        div {
+            @include box_flex;
+            @include justify(space-between);
+            @include align;
+            p {
+                padding: 0 pxTorem(10px);
+                color: #fff;
+            }
+        }
+        i {
+            font-size: pxTorem(20px);
+            color: #fff;
+        }
+    }
+    section {
+        .swiper-container,
+        .swiper-wrapper,
+        .swiper-slide {
+            width: 100%;
+            height: 100%;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    footer {
+        width: 100%;
+        height: pxTorem(44px);
+        background: #e0ceb1;
+        @include box_flex;
+        @include justify(space-around);
+        @include align;
+        color: #fff;
+        span {
+            font-size: pxTorem(14px);
+        }
+        p {
+            font-size: pxTorem(30px);
+        }
+    }
+}
