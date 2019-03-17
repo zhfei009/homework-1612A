@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>抖音</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <span>搜索</span>
+            <span>推荐&nbsp;&nbsp;北京</span>
+            <span>..</span>
+        </header>
+        <section class="cont">
+            <h2>&nbsp;&nbsp;大多数人都等不到来日方长只有乍然离场而已</h2>
+            <img src="./img/IMG_0358_r2_c1.png" alt="">
+            <h4>&nbsp;&nbsp;@一禅经典语录</h4>
+            <p>
+                &nbsp;&nbsp;在合适的时间遇到合适的人是一种幸福。@抖音小组手#情感语录#一禅小和尚
+            </p>
+            <span>&nbsp;&nbsp;@一禅经典语录创作的原声</span>
+        </section>
+        <footer>
+            <span>首页</span>
+            <span>关注</span>
+            <span>+</span>
+            <span>消息</span>
+            <span>我</span>
+        </footer>
+    </div>
+</body>
+<script>
+    let xhr = new XMLHttpRequest();
+    xhr.open('GET', '/list', true);
+    xhr.send();
+    xhr.onload = () => {
+        if ((xhr.status >= 200 && xhr.status < 300) || xhr.status === 304) {
+            console.log(JSON.parse(xhr.responseText));
+            var data = JSON.parse(xhr.responseText);
+            if (data.code == 0) {
+                var html = '';
+                data.data.forEach((v, i) => {
+
+                    html += ` <h2>&nbsp;&nbsp;${v.title}</h2>
+                                    <img src="${v.img}" alt="">
+                                    <h4>&nbsp;&nbsp;${v.author}</h4>
+                                    <p>
+                                        &nbsp;&nbsp;${v.content}
+                                    </p>
+                                    <span>&nbsp;&nbsp;${v.title}创作的原声</span>`;
+                });
+                document.querySelector('.cont').innerHTML = html;
+            }
+
+        }
+    }
+</script>
+
+</html>
