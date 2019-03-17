@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="common/flexiable.js">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="common/fonts/iconfont.css">
+    <link rel="stylesheet" href="common/dist/css/swiper.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div><i class="icon iconfont icon-fangdajing"></i></div>
+            <div><a href="">推荐</a><a href="">北京</a></div>
+            <div><i class="icon iconfont icon-gengduo-01"></i></div>
+        </div>
+        <div class="section">
+            <div class='swiper-container'>
+                <div class='swiper-wrapper mine'>
+                    <!--  <div class='swiper-slide '>
+                       <div class="box" style="color:orange">
+                            silde1
+                            <div>
+                                <h5>${val.title}</h5>
+                            </div>
+                            <div><img src="img/${val.imgs}" alt=""></div>
+                            <div>
+                                <p>${val.content}</p>
+                                <p>${val.author}</p>
+                            </div> 
+                        </div>
+                        <div class='swiper-slide' style="color:yellow">silde2</div>
+                        <div class='swiper-slide' style="color:blue">silde3</div>
+                    </div>-->
+                </div>
+                <div class='swiper-pagination'></div>
+            </div>
+        </div>
+        <div class="footer">
+            <div>首页</div>
+            <div>关注</div>
+            <div>+</div>
+            <div>消息</div>
+            <div>我</div>
+        </div>
+    </div>
+    <script src="common/axios.js"></script>
+    <script src="common/dist/js/swiper.min.js"></script>
+
+    <script>
+        // axios.get("/getData").then((res) => {
+        //     console.log(res)
+
+        // })
+        var xhr = new XMLHttpRequest();
+        xhr.open("get", "/getData", true);
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                var data = JSON.parse(xhr.responseText)
+                rander(data.data)
+            }
+        }
+        xhr.send()
+        var mine = document.querySelector(".mine")
+
+        function rander(data) {
+            var html = "";
+            data.map(val => {
+                console.log(val)
+                return html += `<div class='swiper-slide '>
+                            <div class="box">
+                                <div>
+                                    <h5>${val.title}</h5>
+                                </div>
+                                <div><img src="img/${val.imgs}" alt=""></div>
+                                <div>
+                                    <p>${val.content}</p>
+                                    <p>${val.author}</p>
+                                </div>  
+                            </div>
+                        </div>`;
+
+            })
+            mine.innerHTML = html;
+            var swiper = new Swiper(".swiper-container", {
+                direction: 'vertical',
+            })
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+$browser-default-font-size: 37.5px !default;
+@function pxTorem($px) {
+    //$px为需要转换的字号
+    @return $px / $browser-default-font-size * 1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    font-size: $browser-default-font-size;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background: #f9eed5;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    .header {
+        width: 100%;
+        height: pxTorem(50px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 0 pxTorem(15px);
+        div {
+            &:nth-child(1) {
+                flex: 1;
+                font-size: pxTorem(20px);
+            }
+            &:nth-child(2) {
+                flex: 8;
+                text-align: center;
+                width: pxTorem(100px);
+                font-size: pxTorem(20px);
+                a {
+                    padding: 0 pxTorem(10px);
+                    &:nth-child(1) {
+                        border-right: 1px solid #ccc;
+                    }
+                }
+            }
+            &:nth-child(1) {
+                flex: 1;
+                font-size: pxTorem(20px);
+            }
+        }
+    }
+    .section {
+        flex: 1;
+        width: 100%;
+        height: 100%;
+        .swiper-container {
+            .swiper-wrapper {
+                .swiper-slide {
+                    flex: 1;
+                    // display: flex;
+                    flex-direction: column;
+                    .box {
+                        width: 100%;
+                        height: pxTorem(350px);
+                        padding-top: pxTorem(100px);
+                        div {
+                            &:nth-child(1) {
+                                height: pxTorem(150px);
+                                line-height: pxTorem(150px);
+                                text-align: bottom;
+                                h5 {
+                                    font-size: pxTorem(14px);
+                                }
+                            }
+                            &:nth-child(2) {
+                                width: 100%;
+                                height: pxTorem(200px);
+                                img {
+                                    width: 100%;
+                                    height: pxTorem(200px);
+                                }
+                            }
+                            &:nth-child(3) {
+                                p {
+                                    font-size: pxTorem(20px);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+        width: 100%;
+        height: pxTorem(50px);
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        border-top: 1px solid #ccc;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 pxTorem(10px);
+        div {
+            font-size: pxTorem(20px);
+        }
+    }
+}

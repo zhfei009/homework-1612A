@@ -1,0 +1,22 @@
+{
+    "name": "myweb",
+    "version": "1.0.0",
+    "description": "",
+    "main": "gulpfile.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "gulp": "^4.0.0",
+        "gulp-babel": "7.0.0",
+        "gulp-sass": "*",
+        "gulp-uglify": "*",
+        "gulp-clean-css": "*",
+        "gulp-webserver": "*",
+        "babel-core": "*",
+        "babel-preset-es2015": "*"
+    }
+}
