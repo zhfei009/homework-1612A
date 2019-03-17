@@ -1,0 +1,43 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>Document</title><link rel="stylesheet" href="./css/index.css"><link rel="stylesheet" href="./css/swiper.css"><link rel="stylesheet" href="./fonts2/iconfont.css"><script src="./js/flexible.js"></script></head><body><div class="box" style="width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    background:url('../img/1.jpg');
+    background-size:cover;"><div class="header"><p><i class="iconfont icon-fangdajing"></i></p><p><span class="active">推荐</span><span>北京</span></p><p><i class="iconfont icon-gengduo-01"></i></p></div><div class="container"><div class="name">@<span class="nCen"></span></div><div class="center"><div></div><span>@抖音小助手#一禅小和尚</span></div></div><div class="footer"><p class="add">首页</p><p>关注</p><p>+</p><p>消息</p><p>我</p></div></div><script>var box=document.querySelector(".box");
+        var ming=document.querySelector(".nCen");
+        console.log(ming)
+        var center=document.querySelector(".center>div");
+
+        function ajax(opt){
+            let {
+                type,
+                url,
+                success
+            }=opt;
+            var xhr=window.XMLHttpRequest?new XMLHttpRequest():new ActiveXObject("Microsoft.XMLHTTP");
+            xhr.open(type,url,true);
+            xhr.onreadystatechange=function(){
+                if(xhr.readyState===4){
+                    if(xhr.status===200){
+                        success&&success(JSON.parse(xhr.responseText));
+                    }
+                }
+            }
+            xhr.send();
+        }
+        ajax({
+            type:"get",
+            url:"/getData",
+            success:function(data){
+               var data=data.msg;
+               box.style.background=data[0].bgimg;
+               ming.innerHTML=data[0].name;
+               center.innerHTML=data[0].title;
+            //    var str="";
+            //    data.forEach(item=>{
+            //        str+=`
+                   
+            //        `
+            //    })
+            }
+        })</script></body></html>
