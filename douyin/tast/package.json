@@ -1,0 +1,17 @@
+{
+    "name": "tast",
+    "version": "1.0.0",
+    "description": "",
+    "main": "gulpfile.js",
+    "devDependencies": {
+        "gulp": "^4.0.0",
+        "gulp-sass": "*",
+        "gulp-webserver": "*"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}

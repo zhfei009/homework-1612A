@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+</head>
+
+<body>
+    <div class="warpper">
+        <header class="header">
+            <span><i class="iconfont icon-fangdajing"></i></span>
+            <ul>
+                <li>推荐</li>
+                <li>北京</li>
+            </ul>
+            <span><i class="iconfont icon-share"></i></span>
+        </header>
+        <section class="mian">
+            <!-- <div class="title">
+                <h2>
+                    大多数人都等不到来日方长只有乍然离场而已
+                </h2>
+            </div>
+            <div class="banner">
+                <img src="img/banner1.jpg" alt="">
+            </div>
+            <p class="tit">在合适的时间遇到合适的人是一种幸福。<b>@抖音小助手#情感语录#一禅小和尚</b></p>
+            <div class="puper">@一禅经典语录创作的原音</div> -->
+        </section>
+        <footer class="footer">
+            <span>首页</span>
+            <span>关注</span>
+            <span>添加</span>
+            <span>消息</span>
+            <span>我</span>
+        </footer>
+    </div>
+    <script src="js/axios.js"></script>
+    <script src="js/flexible.js"></script>
+    <script>
+        let mian = document.querySelector(".mian")
+        axios.get("/api/list").then(data => {
+            mian.innerHTML = data.data.data.map(val => {
+                return `<div class="title">
+                            <h2>${val.title}</h2>
+                        </div>
+                        <div class="banner">
+                            <img src="${val.banner}" alt="">
+                        </div>
+                        <p class="tit">${val.tit}<b>${val.b}</b></p>
+                        <div class="puper">${val.puper}</div>`
+            }).join("")
+        })
+    </script>
+
+</body>
+
+</html>
