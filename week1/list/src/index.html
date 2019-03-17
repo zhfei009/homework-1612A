@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+</head>
+
+<body>
+    <div class="box">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <!-- <img src="./img/a1.png" alt="">
+                    <div>
+
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/better-scroll.js"></script>
+<script src="./js/flexible.js"></script>
+<script src="./js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        autoplay: true
+    })
+    let xhr = new XMLHttpRequest()
+    xhr.open('get', '/get', true)
+    xhr.send()
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+                console.log(JSON.parse(xhr.responseText).data)
+                render(JSON.parse(xhr.responseText).data)
+            }
+        }
+    }
+
+
+    function render(data) {
+        var str = '';
+        data.forEach(file => {
+            str += `
+                <div>
+                    <img src="${file.img}" alt="">
+                    <div>
+                        ${file.msg}
+                    </div>
+                </div>
+            `
+        })
+        const swiperSlide = document.querySelector('.swiper-slide')
+        console.log(swiperSlide)
+        swiperSlide.innerHTML = str
+    }
+</script>
+
+</html>

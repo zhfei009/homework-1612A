@@ -1,0 +1,25 @@
+@import'common.scss';
+@function qw($px) {
+    @return $px / $browser-default-font-size * 1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        div {
+            text-align: center;
+            font-size: qw(20px);
+            width: 100%;
+        }
+    }
+}
