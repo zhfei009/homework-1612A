@@ -25,28 +25,29 @@ gulp.task('watch', () => {
 
 //起服务
 gulp.task('server', () => {
-    return gulp.src('./src')
-        .pipe(webserver({
-            port: 9999,
-            middleware: function(req, res) {
-                if (req.url === '/favicon.ico') {
-                    return res.end()
+        return gulp.src('./src')
+            .pipe(webserver({
+                port: 9999,
+                livereload: true,
+                middleware: function(req, res) {
+                    if (req.url === '/favicon.ico') {
+                        return res.end()
+                    }
+                    let { pathname, query } = url.parse(req.url, true)
+                    if (pathname === '/api/list') {
+                        res.end(JSON.stringify({
+                            code: 1,
+                            list: datalist
+                        }))
+                    } else {
+                        pathname = pathname === '/' ? 'index.html' : pathname
+                        const file = fs.readFileSync(path.join(__dirname, 'src', pathname))
+                        res.end(file)
+                    }
                 }
-                let { pathname, query } = url.parse(req.url, true)
-                if (pathname === '/api/list') {
-                    res.end(JSON.stringify({
-                        code: 1,
-                        list: datalist
-                    }))
-                } else {
-                    pathname = pathname === '/' ? 'index.html' : pathname
-                    const file = fs.readFileSync(path.join(__dirname, 'src', pathname))
-                    res.end(file)
-                }
-            }
-        }))
-})
-
+            }))
+    })
+    //执行开发
 gulp.task('dev', gulp.parallel('Sass', 'watch', 'server'))
 
 
@@ -71,5 +72,5 @@ gulp.task('devjs', () => {
         .pipe(gulp.dest('./build/js'))
 })
 
-//
+//执行上线
 gulp.task('build', gulp.parallel('devSass', 'devhtml', 'devjs'))
