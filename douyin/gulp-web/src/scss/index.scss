@@ -1,0 +1,146 @@
+@import "common.scss";
+@import "_minix.scss";
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .header {
+        z-index: 99;
+        position: fixed;
+        width: 100%;
+        display: flex;
+        background: rgba(8, 8, 8, 0.575);
+        height: px2rem(55px);
+        justify-content: space-between;
+        font-weight: bold;
+        align-items: center;
+        .search {
+            width: 10%;
+            height: 100%;
+            text-align: center;
+            i {
+                font-size: px2rem(25px);
+                line-height: px2rem(55px);
+            }
+        }
+        .center {
+            width: 20%;
+            height: 100%;
+            text-align: center;
+            line-height: px2rem(55px);
+            font-size: px2rem(16px);
+            display: flex;
+            justify-content: space-between;
+        }
+        .more {
+            width: 10%;
+            height: 100%;
+            text-align: center;
+            i {
+                font-size: px2rem(25px);
+                line-height: px2rem(55px);
+            }
+        }
+    }
+    .main {
+        width: 100%;
+        height: 100%;
+        .nav {
+            width: 100%;
+            height: 100%;
+            .swiper-wrapper {
+                .swiper-slide {
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    .title {
+                        z-index: 99;
+                        position: fixed;
+                        left: px2rem(10px);
+                        top: 70%;
+                        font-size: px2rem(16px);
+                        font-weight: bold;
+                    }
+                    .sidebar {
+                        z-index: 99;
+                        width: 15%;
+                        height: 60%;
+                        position: fixed;
+                        right: px2rem(10px);
+                        top: 30%;
+                        text-align: center;
+                        ul {
+                            width: 100%;
+                            height: 60%;
+                            // justify-content: space-around;
+                            li {
+                                width: 100%;
+                                height: 20%;
+                                margin-top: px2rem(20px);
+                                i {
+                                    font-size: px2rem(30px);
+                                    color: #fff;
+                                }
+                                p {
+                                    color: #fff;
+                                }
+                                &:last-child {
+                                    margin-top: px2rem(50px);
+                                }
+                            }
+                            .massage-person {
+                                width: 100%;
+                                height: 20%;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    border-radius: 50%;
+                                }
+                            }
+                            .music {
+                                width: 100%;
+                                height: 20%;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    border-radius: 50%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+        z-index: 99;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: px2rem(50px);
+        background: rgba(15, 15, 15, 0.575);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-weight: bold;
+        line-height: px2rem(50px);
+        border-top: px2rem(1px) solid rgba(12, 12, 12, 0.671);
+        .base {
+            width: 20%;
+            height: 100%;
+            text-align: center;
+            font-size: px2rem(18px);
+            i {
+                font-size: px2rem(30px);
+                color: #10f5d6;
+                line-height: pxrem(50px);
+            }
+            &.active {
+                color: #0fe7e7;
+                border-bottom: px2rem(1px) solid #fff;
+            }
+        }
+    }
+}

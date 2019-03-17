@@ -1,0 +1,68 @@
+[{
+        "img": "images/1.jpg",
+        "tou": "images/1.png",
+        "type": "乳品酒饮"
+    },
+
+
+    {
+        "img": "images/2.jpg",
+        "tou": "images/2.png",
+        "type": "新鲜水果"
+    },
+
+
+    {
+        "img": "images/3.jpg",
+        "tou": "images/3.png",
+        "type": "美护日百"
+    },
+
+
+    {
+        "img": "images/.jpg",
+        "tou": "images/4.png",
+        "type": "休闲零食"
+    },
+
+
+    {
+        "img": "images/1.jpg",
+        "tou": "images/5.png",
+        "type": "速食粮油"
+    },
+
+
+    {
+        "img": "images/1.jpg",
+        "tou": "images/6.png",
+        "type": "会员专区"
+    },
+
+
+    {
+        "img": "images/1.jpg",
+        "tou": "images/7.png",
+        "type": "好物拼团"
+    },
+
+
+    {
+        "img": "images/1.jpg",
+        "tou": "images/8.png",
+        "type": "邀请有礼"
+    },
+
+
+    {
+        "img": "images/1.jpg",
+        "tou": "images/9.png",
+        "type": "订单提现"
+    },
+
+    {
+        "img": "images/1.jpg",
+        "tou": "images/10.png",
+        "type": "每日签到"
+    }
+]
