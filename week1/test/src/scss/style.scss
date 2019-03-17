@@ -1,0 +1,87 @@
+@import 'common.scss';
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url('../images/bk.jpg')no-repeat center;
+    background-size: cover;
+}
+
+.header {
+    width: 100%;
+    height: px2rem(45px);
+    position: fixed;
+    top: 0;
+    background: rgba(255, 255, 255, .3);
+    display: flex;
+    justify-content: space-between;
+    line-height: px2rem(45px);
+    padding: 0 px2rem(10px);
+    .iconfont {
+        font-size: px2rem(24px);
+    }
+    .cont {
+        font-size: px2rem(16px);
+        display: flex;
+        li {
+            padding: 0 px2rem(10px);
+        }
+    }
+}
+
+.footer {
+    width: 100%;
+    height: px2rem(45px);
+    position: fixed;
+    bottom: 0;
+    background: rgba(255, 255, 255, .3);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    a {
+        font-size: px2rem(14px);
+        color: #333;
+        line-height: px2rem(45px);
+        text-align: center;
+        &.ico {
+            width: px2rem(40px);
+            height: px2rem(26px);
+            line-height: px2rem(26px);
+            border: 1px solid #ccc;
+            background: #fff;
+            border-radius: px2rem(5px);
+        }
+    }
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        height: 100%;
+        .content {
+            height: 50%;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            padding: 0 px2rem(10px);
+            img {
+                width: 100%;
+                margin-top: px2rem(10px);
+            }
+            h3 {
+                line-height: px2rem(26px);
+                font-size: px2rem(18px);
+            }
+        }
+    }
+}
